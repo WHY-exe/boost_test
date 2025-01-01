@@ -23,10 +23,14 @@
 #include <boost/log/utility/setup/common_attributes.hpp>
 #include <boost/log/utility/setup/console.hpp>
 #include <boost/log/utility/setup/file.hpp>
+#include <boost/outcome.hpp>
 #include <filesystem>
+#include <optional>
 #include <string>
 
 namespace util {
+namespace fs = std::filesystem;
+namespace outcome = boost::outcome_v2;
 namespace logging = boost::log;
 namespace log_attrs = boost::log::attributes;
 namespace log_src = boost::log::sources;
@@ -46,9 +50,12 @@ public:
 		return _slg;
 	};
 
-	static void init_default_sink(log_level svl, const std::string &log_path = "/log/default", bool isConsoleEnabled = false, bool isFileEnabled = false);
+	static outcome::result<void> init_default(log_level svl, bool file_enabled, bool console_enabled);
 
-	static void add_file_sink(const std::string &file_path, log_level svl);
+	static outcome::result<void> init_default_sink(log_level svl, const std::optional<fs::path> &log_path = std::nullopt,
+			bool isConsoleEnabled = false);
+
+	static outcome::result<void> add_file_sink(const std::string &file_path, log_level svl);
 
 	// Set attribute and return the new value
 	template <typename ValueType, class Logger>

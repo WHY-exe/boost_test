@@ -19,12 +19,13 @@ boost::outcome_v2::result<fs::path> program_location() noexcept {
 #elif defined(linux)
 		constexpr size_t MAXBUFSIZE = 1024;
 		std::string ret;
-		ret.resize(MAX_PATH, '\0');
-		int file_path_len = readlink("/proc/self/exe", &ret[0], MAXBUFSIZE);
+		ret.resize(MAXBUFSIZE, '\0');
+		ssize_t file_path_len = readlink("/proc/self/exe", &ret[0], MAXBUFSIZE);
 		if (file_path_len == -1) {
 			return std::error_code(errno, std::generic_category());
 		}
 		ret.resize(file_path_len);
+		return ret;
 #else
 		return make_error_code(Error::NO_IMPLEMENTED);
 #endif

@@ -8,7 +8,6 @@
 #include "util/exception.hpp"
 #include "util/log.hpp"
 #include "util/stacktrace_dumper.h"
-#include "util/util.hpp"
 
 static void terminate_handle() {
 	try {
@@ -40,14 +39,11 @@ int main() {
 #ifdef unix
 	signal(SIGPIPE, SIG_IGN);
 #endif
-	const auto res = util::program_location();
-	std::string log_path = "./log/default";
-	if (res) {
-		log_path = res.value().parent_path().string() + log_path;
-	} else {
-		std::cout << "fail to get program location" << res.error().message() << std::endl;
+	const auto log_ini_stat =
+			util::Logger::init_default(util::log_level::trace, true, true);
+	if (!log_ini_stat) {
+		std::cout << "fail to ini default log sink" << '\n';
 	}
-	util::Logger::init_default_sink(util::log_level::trace, log_path, true, true);
 #ifdef unix
 	signal(SIGPIPE, SIG_IGN);
 #endif
