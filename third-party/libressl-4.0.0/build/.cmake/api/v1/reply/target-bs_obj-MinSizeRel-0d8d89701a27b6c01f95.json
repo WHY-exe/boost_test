@@ -1,0 +1,263 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "ssl/bs_obj.dir/MinSizeRel/bs_ber.obj"
+		},
+		{
+			"path" : "ssl/bs_obj.dir/MinSizeRel/bs_cbb.obj"
+		},
+		{
+			"path" : "ssl/bs_obj.dir/MinSizeRel/bs_cbs.obj"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"ssl/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 75,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 154,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 245,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 122,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 137,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 123,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 135,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 134,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 136,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 140,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 124,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 125,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 146,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 76,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS -MP -W4  -wd4018 -wd4057 -wd4100 -wd4127 -wd4146 -wd4244 -wd4245 -wd4267 -wd4389 -wd4706 -wd4996 /O1 /Ob1  -MD"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "HAVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "HAVE_STRNLEN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LIBRESSL_INTERNAL"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "NO_SYSLOG"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "OPENSSL_NO_HW_PADLOCK"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_CRT_DEPRECATED_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_POSIX_THREAD_SAFE_FUNCTIONS"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_REENTRANT"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "_WIN32_WINNT=0x0600"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "__BEGIN_HIDDEN_DECLS="
+				},
+				{
+					"backtrace" : 14,
+					"define" : "__END_HIDDEN_DECLS="
+				},
+				{
+					"backtrace" : 15,
+					"define" : "inline=__inline"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/."
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/../include/compat"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "bs_obj::@231ae96ba859d0dd94ae",
+	"name" : "bs_obj",
+	"paths" : 
+	{
+		"build" : "ssl",
+		"source" : "ssl"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/bs_ber.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/bs_cbb.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/bs_cbs.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

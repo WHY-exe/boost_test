@@ -2,7 +2,7 @@
 #include <system_error> // bring in std::error_code et al
 namespace util {
 enum class Error {
-	Success,
+	SUCCESSED,
 	NO_IMPLEMENTED,
 	STD_EXCEPTION,
 	UNKNOWN_EXCEPTION

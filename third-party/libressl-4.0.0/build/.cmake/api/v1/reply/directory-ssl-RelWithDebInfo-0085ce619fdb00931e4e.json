@@ -1,0 +1,87 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"ssl/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 129,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 147,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"ssl/RelWithDebInfo/ssl.lib"
+			],
+			"targetId" : "ssl::@231ae96ba859d0dd94ae",
+			"targetIndex" : 109,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"ssl/RelWithDebInfo/ssl.lib"
+			],
+			"targetId" : "ssl::@231ae96ba859d0dd94ae",
+			"targetIndex" : 109,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/LibreSSL",
+			"exportName" : "SSL-target",
+			"exportTargets" : 
+			[
+				{
+					"id" : "ssl::@231ae96ba859d0dd94ae",
+					"index" : 109
+				}
+			],
+			"paths" : 
+			[
+				"ssl/CMakeFiles/Export/ae115adb3c2f21fa75e29177c777fafa/LibreSSL-SSL.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "ssl",
+		"source" : "ssl"
+	}
+}

@@ -30,6 +30,7 @@ target_link_libraries(${PROJECT_NAME}
     Boost::outcome
     Boost::log_setup
     Boost::stacktrace
+    ssl
 )
 
 target_precompile_headers(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/../boost_pch.hpp)
@@ -45,6 +46,7 @@ add_dependencies(${PROJECT_NAME}
     Boost::log_setup
     Boost::stacktrace
     Boost::outcome
+    ssl
 )
 
 set_target_properties(${BINARY_NAME}

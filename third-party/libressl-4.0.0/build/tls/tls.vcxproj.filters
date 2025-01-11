@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\tls\empty.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\tls\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls.def">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_bio_cb.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_client.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_config.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_conninfo.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_keypair.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_server.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_signer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_ocsp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_peer.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_util.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.dir\$(Configuration)\tls_verify.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_compat_obj.dir\$(Configuration)\empty.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_compat_obj.dir\$(Configuration)\ftruncate.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_compat_obj.dir\$(Configuration)\pread.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_compat_obj.dir\$(Configuration)\pwrite.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{A924DEE5-E344-3252-B80D-5C2CC5AFA251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{82516C95-8311-333F-BD6F-FE1791B960AC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

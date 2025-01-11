@@ -1,0 +1,87 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"crypto/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 861,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 873,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 879,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"crypto/MinSizeRel/crypto.lib"
+			],
+			"targetId" : "crypto::@1d62b725e69adc70ad4a",
+			"targetIndex" : 52,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"crypto/MinSizeRel/crypto.lib"
+			],
+			"targetId" : "crypto::@1d62b725e69adc70ad4a",
+			"targetIndex" : 52,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/LibreSSL",
+			"exportName" : "Crypto-target",
+			"exportTargets" : 
+			[
+				{
+					"id" : "crypto::@1d62b725e69adc70ad4a",
+					"index" : 52
+				}
+			],
+			"paths" : 
+			[
+				"crypto/CMakeFiles/Export/ae115adb3c2f21fa75e29177c777fafa/LibreSSL-Crypto.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "crypto",
+		"source" : "crypto"
+	}
+}

@@ -1,0 +1,734 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F4460525-B8ED-36E3-8B6D-D64EBBD2122D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASMInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\LibreSSLConfig.cmake.in;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeASMCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeASM_MASMCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeCCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeRCCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeSystem.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\cmake_export_symbol.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASMInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\LibreSSLConfig.cmake.in;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeASMCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeASM_MASMCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeCCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeRCCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeSystem.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\cmake_export_symbol.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASMInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\LibreSSLConfig.cmake.in;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeASMCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeASM_MASMCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeCCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeRCCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeSystem.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\cmake_export_symbol.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\BasicConfigVersion-SameMajorVersion.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASMCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASMInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeASM_MASMInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCCompilerABI.c;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineASM_MASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeDetermineSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeFindBinUtils.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakePackageConfigHelpers.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystem.cmake.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestASM_MASMCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckFunctionExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFile.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFileCXX.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckIncludeFiles.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckLibraryExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckSymbolExists.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CheckTypeSize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Bruce-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Compaq-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\CrayClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\GNU-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\HP-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMCPP-C-DetermineVersionInternal.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IBMClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\LCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-ASM.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\OrangeC-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SDCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\SunPro-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Tasking-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\TinyCC-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\VisualAge-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XL-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\XLClang-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Compiler\zOS-C-DetermineCompiler.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\GNUInstallDirs.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Internal\FeatureTesting.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-C.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\TestBigEndian.cmake;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\share\cmake-3.28\Modules\WriteBasicConfigVersionFile.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\LibreSSLConfig.cmake.in;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeASMCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeASM_MASMCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeCCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeRCCompiler.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\3.28.0-msvc1\CMakeSystem.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\cmake_export_symbol.cmake;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\cmake_uninstall.cmake.in;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{C2144665-9388-36B0-AE24-06A8D64D8C1E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\aeadtest.vcxproj">
+      <Project>{0840D54D-0781-36A5-B3D4-49822392126F}</Project>
+      <Name>aeadtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\aes_test.vcxproj">
+      <Project>{44DC189C-49D0-33AE-A9FC-D26948DF9023}</Project>
+      <Name>aes_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\aes_wrap.vcxproj">
+      <Project>{EC9EBDA2-CE17-3F76-8847-28F1F05B9435}</Project>
+      <Name>aes_wrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\apitest.vcxproj">
+      <Project>{5026C4F0-88A9-30F5-867D-83468878D08D}</Project>
+      <Name>apitest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1_string_to_utf8.vcxproj">
+      <Project>{A0D315C9-F4C7-3556-98EF-6B66E6C8DA9C}</Project>
+      <Name>asn1_string_to_utf8</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1api.vcxproj">
+      <Project>{133E504F-79B4-3CC6-840D-39D7FA71FDAA}</Project>
+      <Name>asn1api</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1basic.vcxproj">
+      <Project>{3A937946-3966-3115-BF0F-C2A797AF76C0}</Project>
+      <Name>asn1basic</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1complex.vcxproj">
+      <Project>{FE167E91-3E92-39B4-A370-FBF1D2C7B5EB}</Project>
+      <Name>asn1complex</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1evp.vcxproj">
+      <Project>{505A57BA-758C-3E7A-8BD1-538F01D11BF1}</Project>
+      <Name>asn1evp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1object.vcxproj">
+      <Project>{DC70ED34-54D8-3863-BEDB-BF278792F3B6}</Project>
+      <Name>asn1object</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1oct.vcxproj">
+      <Project>{80E02ECE-66DE-3058-A547-4A620490DEBA}</Project>
+      <Name>asn1oct</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1string_copy.vcxproj">
+      <Project>{9B01921C-1DD2-397D-A539-1E95FAFD0144}</Project>
+      <Name>asn1string_copy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1test.vcxproj">
+      <Project>{8413505B-5168-3939-B63D-B899F6E7370C}</Project>
+      <Name>asn1test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1time.vcxproj">
+      <Project>{06CA3266-F948-3E96-8BA3-0A11D0ED0643}</Project>
+      <Name>asn1time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\asn1x509.vcxproj">
+      <Project>{EA3F0797-08AA-31E7-BEF6-89923A5B3856}</Project>
+      <Name>asn1x509</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\base64test.vcxproj">
+      <Project>{EDA9F09B-4F49-37E9-B9BD-6E730D0A5D71}</Project>
+      <Name>base64test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bf_test.vcxproj">
+      <Project>{B934DD09-0524-33B8-AF7D-F73BD3C33B31}</Project>
+      <Name>bf_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bio_asn1.vcxproj">
+      <Project>{40764CF5-1CB1-3588-B203-51A00CBA81D4}</Project>
+      <Name>bio_asn1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bio_chain.vcxproj">
+      <Project>{C97A2FF7-B1C2-3DF1-BFAE-513C095F3C14}</Project>
+      <Name>bio_chain</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bio_dump.vcxproj">
+      <Project>{3C9CD667-4389-3882-97EA-9DFB157DC940}</Project>
+      <Name>bio_dump</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bio_mem.vcxproj">
+      <Project>{58EE6DE2-01F3-3EDC-88B8-E46415C54702}</Project>
+      <Name>bio_mem</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_add_sub.vcxproj">
+      <Project>{91E593CD-63B5-3305-B209-D655FB0FB393}</Project>
+      <Name>bn_add_sub</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_bits.vcxproj">
+      <Project>{4F197629-05F2-3CB5-95C3-EC91ABE71A1D}</Project>
+      <Name>bn_bits</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_cmp.vcxproj">
+      <Project>{3635F0E4-B59C-30EA-8486-C5E4FA8976E2}</Project>
+      <Name>bn_cmp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_convert.vcxproj">
+      <Project>{3390EEB5-48D8-30A9-8F4E-9E7D81169E85}</Project>
+      <Name>bn_convert</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_gcd.vcxproj">
+      <Project>{75A7F40D-DBA0-3727-9560-4FD9675DEFCE}</Project>
+      <Name>bn_gcd</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_isqrt.vcxproj">
+      <Project>{2A4D67AB-C797-3DF6-AE81-4543961F696E}</Project>
+      <Name>bn_isqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_mod_exp.vcxproj">
+      <Project>{BA609CE3-FF7A-30A4-854C-7BA3BEDDCCCC}</Project>
+      <Name>bn_mod_exp</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_mod_inverse.vcxproj">
+      <Project>{CF3B2B6B-EDC9-3642-88EF-05D6BEE8171D}</Project>
+      <Name>bn_mod_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_mod_sqrt.vcxproj">
+      <Project>{D97967C5-5835-313B-AADB-E8B7DBF05686}</Project>
+      <Name>bn_mod_sqrt</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_mont.vcxproj">
+      <Project>{4FA98FBA-2B73-3A3D-AF6B-A3A829219106}</Project>
+      <Name>bn_mont</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_primes.vcxproj">
+      <Project>{31184717-8801-35E2-B8BF-1945ED3390A1}</Project>
+      <Name>bn_primes</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_print.vcxproj">
+      <Project>{218B3572-700C-36CA-9B3F-34B01907941F}</Project>
+      <Name>bn_print</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_shift.vcxproj">
+      <Project>{DA532EEF-7F5C-3D3E-8AE6-79B3C0594591}</Project>
+      <Name>bn_shift</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_test.vcxproj">
+      <Project>{0E7978ED-A7E5-3326-86E8-2F8C42B3C148}</Project>
+      <Name>bn_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_to_string.vcxproj">
+      <Project>{98543D0D-6F1B-3132-9A42-3C6DC80F891F}</Project>
+      <Name>bn_to_string</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_unit.vcxproj">
+      <Project>{8BB95D6B-2F7E-3BBA-BA9A-307122262044}</Project>
+      <Name>bn_unit</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bn_word.vcxproj">
+      <Project>{2026964F-D74F-3B21-AA91-797DB700C462}</Project>
+      <Name>bn_word</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\bs_obj.vcxproj">
+      <Project>{9B755D2B-1B97-38EC-B226-3CE3344E181F}</Project>
+      <Name>bs_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\buffertest.vcxproj">
+      <Project>{CFAC0B85-11A9-3FEE-B8A0-71CC9B7722B6}</Project>
+      <Name>buffertest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\bytestringtest.vcxproj">
+      <Project>{8D7B224A-7E9E-34EF-B9F9-CF9E20EE694D}</Project>
+      <Name>bytestringtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\casttest.vcxproj">
+      <Project>{F56A599F-CA92-322F-B8D7-E7714FF006FF}</Project>
+      <Name>casttest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\chachatest.vcxproj">
+      <Project>{B90A28A4-EA0B-3FC3-8F8F-CFE6E9545D3A}</Project>
+      <Name>chachatest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\cipher_list.vcxproj">
+      <Project>{DC9F27FC-89B8-3BC4-A403-2AE0F790C166}</Project>
+      <Name>cipher_list</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\cipherstest.vcxproj">
+      <Project>{E9E04CB7-EA4D-32FC-9D9B-2E960951AFF2}</Project>
+      <Name>cipherstest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\clienttest.vcxproj">
+      <Project>{CD7B512D-CD0D-32FB-9EA3-4B88BEB9D79F}</Project>
+      <Name>clienttest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\cmstest.vcxproj">
+      <Project>{2AB9758C-7A64-3A4E-A54B-A2288753A044}</Project>
+      <Name>cmstest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.vcxproj">
+      <Project>{D2340DB1-F3BE-3914-BE31-5A2E45FB504E}</Project>
+      <Name>compat_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\configtest.vcxproj">
+      <Project>{97F00785-6599-38A8-B904-E6CC3C4E332B}</Project>
+      <Name>configtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\constraints.vcxproj">
+      <Project>{B098FD9F-CE69-3900-AEC6-074338FAED45}</Project>
+      <Name>constraints</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto.vcxproj">
+      <Project>{4876F08B-21B4-3EF8-9F9D-56CC416254A3}</Project>
+      <Name>crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.vcxproj">
+      <Project>{A7C7A0ED-8EDE-38FB-AE10-661C7F8A6B80}</Project>
+      <Name>crypto_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\crypto_test.vcxproj">
+      <Project>{510A057E-4553-3ABD-AF5F-C06086DF85DA}</Project>
+      <Name>crypto_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\cttest.vcxproj">
+      <Project>{9F0386D3-B836-3297-8C51-F1B0A1F86EC1}</Project>
+      <Name>cttest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\destest.vcxproj">
+      <Project>{0A935B1A-692E-3AE3-AEED-0943DBCE2BEC}</Project>
+      <Name>destest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\dhtest.vcxproj">
+      <Project>{7CE3F1C0-7425-3BCB-9D80-3018ED56EA28}</Project>
+      <Name>dhtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\dsatest.vcxproj">
+      <Project>{BC2A7335-1ABD-3979-82DB-94DE364026EB}</Project>
+      <Name>dsatest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ec_asn1_test.vcxproj">
+      <Project>{D6FEC9BC-8824-3E89-90EF-A620BE3DAEC9}</Project>
+      <Name>ec_asn1_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ec_point_conversion.vcxproj">
+      <Project>{DD0B7CD1-4A32-30C8-BB41-FDDEEF33A737}</Project>
+      <Name>ec_point_conversion</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ecc_cdh.vcxproj">
+      <Project>{93A02A8A-89CC-3C01-A7E6-B3EFDCE06A38}</Project>
+      <Name>ecc_cdh</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ecdhtest.vcxproj">
+      <Project>{21B78BDB-B9EB-3625-9209-C755E768E876}</Project>
+      <Name>ecdhtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ecdsatest.vcxproj">
+      <Project>{72E5399E-FED8-3E7F-A096-F5C1EDB9158D}</Project>
+      <Name>ecdsatest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ectest.vcxproj">
+      <Project>{483B6732-F499-3DDC-9A9A-581ABFD55FAB}</Project>
+      <Name>ectest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ed25519test.vcxproj">
+      <Project>{D8AE7554-CAE3-3480-A21D-90D90A9DE98A}</Project>
+      <Name>ed25519test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\evp_ecx_test.vcxproj">
+      <Project>{16CCB3E9-B65C-3B61-82F2-28768078B569}</Project>
+      <Name>evp_ecx_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\evp_pkey_cleanup.vcxproj">
+      <Project>{01CC7C34-8E45-3485-BEAE-4A42D5BA2C9D}</Project>
+      <Name>evp_pkey_cleanup</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\evp_test.vcxproj">
+      <Project>{216B1E7C-E376-33DB-AA84-0DA0A2E6BF7C}</Project>
+      <Name>evp_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\evptest.vcxproj">
+      <Project>{4A10605E-81B1-3613-AFFB-E35494F7FD54}</Project>
+      <Name>evptest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\exdata_test.vcxproj">
+      <Project>{F2E3F49A-DD4A-3377-845B-9055EB776536}</Project>
+      <Name>exdata_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\exportertest.vcxproj">
+      <Project>{99B273C3-CE47-313A-AF05-1DB93FE026AC}</Project>
+      <Name>exportertest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\freenull.vcxproj">
+      <Project>{98AE3371-5963-3ADE-A743-7C60873128A7}</Project>
+      <Name>freenull</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\gcm128test.vcxproj">
+      <Project>{32C87BAE-FB8C-3098-A270-EBEC3ED183A8}</Project>
+      <Name>gcm128test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\handshake_table.vcxproj">
+      <Project>{4284FD55-918C-3DB1-ABE6-A184BAE26384}</Project>
+      <Name>handshake_table</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\hkdf_test.vcxproj">
+      <Project>{87D16659-D4EF-3252-82EC-5E3236360D31}</Project>
+      <Name>hkdf_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\hmactest.vcxproj">
+      <Project>{1E88B917-B4AF-3E05-BE13-60C36C17FC69}</Project>
+      <Name>hmactest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ideatest.vcxproj">
+      <Project>{27B60C84-1D1E-35CE-9448-EDDFB0B01B70}</Project>
+      <Name>ideatest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\igetest.vcxproj">
+      <Project>{5FA978F7-F7BF-3DD7-AC56-4BB48EB867E0}</Project>
+      <Name>igetest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\key_schedule.vcxproj">
+      <Project>{ECDCC191-FA70-3D56-9BB8-0CFC18FC22B7}</Project>
+      <Name>key_schedule</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\keypairtest.vcxproj">
+      <Project>{7DDD0E4B-AB83-32AF-B0B4-275266F39F37}</Project>
+      <Name>keypairtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\lhash_test.vcxproj">
+      <Project>{1A16CEDA-7D74-3FDC-BDA9-182906D368E7}</Project>
+      <Name>lhash_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\md_test.vcxproj">
+      <Project>{57C87D7C-404E-329E-8F44-B2C9A6B44425}</Project>
+      <Name>md_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\objectstest.vcxproj">
+      <Project>{EA638554-C9F8-3120-A55C-677BFCC340C6}</Project>
+      <Name>objectstest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\apps\ocspcheck\ocspcheck.vcxproj">
+      <Project>{B72200CA-4491-31BA-A750-3F71FC1713F0}</Project>
+      <Name>ocspcheck</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\apps\openssl\openssl.vcxproj">
+      <Project>{1A92C5E9-C738-3160-8D9D-23E2116EB5D7}</Project>
+      <Name>openssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\optionstest.vcxproj">
+      <Project>{F32D5A8F-7299-3AB0-BDA2-A0FA6E0AC46C}</Project>
+      <Name>optionstest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\pbkdf2.vcxproj">
+      <Project>{1E317562-20EB-30B3-B1D0-0AD1BA7C8BF2}</Project>
+      <Name>pbkdf2</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\pkcs7test.vcxproj">
+      <Project>{7D72CC10-2774-3EE5-8C03-5BFEF75BD5A6}</Project>
+      <Name>pkcs7test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\policy.vcxproj">
+      <Project>{2FF6BD98-362D-3C95-B502-E94AE260E8C2}</Project>
+      <Name>policy</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\poly1305test.vcxproj">
+      <Project>{4F7BDC64-3339-3305-9307-EE5EC573DAEF}</Project>
+      <Name>poly1305test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\pq_test.vcxproj">
+      <Project>{2018DB7D-13AC-3BDF-9CE5-18B64FC457D2}</Project>
+      <Name>pq_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\quictest.vcxproj">
+      <Project>{2A90B082-AF4C-30D9-977A-692162050504}</Project>
+      <Name>quictest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\randtest.vcxproj">
+      <Project>{8579DD67-53F8-32A2-946C-5D18E9A1A72C}</Project>
+      <Name>randtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\rc2_test.vcxproj">
+      <Project>{64DB67DF-5AC7-3FBE-81A2-35199484A306}</Project>
+      <Name>rc2_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\rc4_test.vcxproj">
+      <Project>{C2096CFA-0B9F-343F-B378-A3815C2E9B04}</Project>
+      <Name>rc4_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\record_layer_test.vcxproj">
+      <Project>{7AD4725C-CB4E-318E-A3D1-494855FFCA4E}</Project>
+      <Name>record_layer_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\recordtest.vcxproj">
+      <Project>{884E300E-6C01-3521-9680-2E9E87BEC9B1}</Project>
+      <Name>recordtest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\rfc3779.vcxproj">
+      <Project>{FF9B6CB2-019B-3EA3-AC2E-4F5D27E503E1}</Project>
+      <Name>rfc3779</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\rfc5280time.vcxproj">
+      <Project>{3B41A398-D182-3576-B9F2-0A0EFB2B27F2}</Project>
+      <Name>rfc5280time</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\rmd_test.vcxproj">
+      <Project>{07154855-B4C6-31F8-9A8A-9507547C5293}</Project>
+      <Name>rmd_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\rsa_padding_test.vcxproj">
+      <Project>{31E375DC-627E-3F86-821E-331243B3E961}</Project>
+      <Name>rsa_padding_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\rsa_test.vcxproj">
+      <Project>{C91821B8-B600-3531-8BE5-0FEC1062A771}</Project>
+      <Name>rsa_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\servertest.vcxproj">
+      <Project>{B1AF931F-F2CA-3C2E-8CF8-05AB40A31541}</Project>
+      <Name>servertest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\sha_test.vcxproj">
+      <Project>{4CD117CA-ED04-39EC-AAA0-FE009A5AD73F}</Project>
+      <Name>sha_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\shutdowntest.vcxproj">
+      <Project>{01CED62A-33B3-3EA9-A449-2D20F15BDA4D}</Project>
+      <Name>shutdowntest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\signertest.vcxproj">
+      <Project>{3B3CB7D1-23EB-31B7-A7D9-71F306A16E2A}</Project>
+      <Name>signertest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\sm3test.vcxproj">
+      <Project>{0758BBFF-7413-37E2-907C-B951431F2E5A}</Project>
+      <Name>sm3test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\sm4test.vcxproj">
+      <Project>{745D7D4C-949F-31F5-87CF-EDE7934F788F}</Project>
+      <Name>sm4test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl.vcxproj">
+      <Project>{96367EDB-195A-39CF-B153-69B11230E009}</Project>
+      <Name>ssl</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ssl_get_shared_ciphers.vcxproj">
+      <Project>{CDD0E313-0C7F-37C3-AF82-79D087B64A9F}</Project>
+      <Name>ssl_get_shared_ciphers</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ssl_methods.vcxproj">
+      <Project>{3DD471BC-A838-382F-8470-BA586ADE3F18}</Project>
+      <Name>ssl_methods</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.vcxproj">
+      <Project>{72CCC1AB-3A64-3F16-8F37-C38BEE9717C7}</Project>
+      <Name>ssl_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ssl_set_alpn_protos.vcxproj">
+      <Project>{A267CE29-622D-3D8D-8838-440C75A09C8F}</Project>
+      <Name>ssl_set_alpn_protos</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ssl_verify_param.vcxproj">
+      <Project>{410C256A-BBC1-3CC2-B6B5-A959667C68F2}</Project>
+      <Name>ssl_verify_param</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ssl_versions.vcxproj">
+      <Project>{BA51C548-AAAB-3750-98DB-C5A157428EAE}</Project>
+      <Name>ssl_versions</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\ssltest.vcxproj">
+      <Project>{53628927-09D7-3CE2-945B-23AB2FBBBE74}</Project>
+      <Name>ssltest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\timingsafe.vcxproj">
+      <Project>{C778A939-157F-30B1-94D4-41B9F7AF7349}</Project>
+      <Name>timingsafe</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls.vcxproj">
+      <Project>{6B8DCA19-2B20-3168-8D0D-69AD8A14AEF5}</Project>
+      <Name>tls</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_compat_obj.vcxproj">
+      <Project>{D575F0E7-3085-395F-9946-F482D62D66FC}</Project>
+      <Name>tls_compat_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\tls_ext_alpn.vcxproj">
+      <Project>{449B514E-9955-305D-86B9-40910D606390}</Project>
+      <Name>tls_ext_alpn</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tls\tls_obj.vcxproj">
+      <Project>{6C4D1A45-8F68-3757-8E97-8E832FF45710}</Project>
+      <Name>tls_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\tls_prf.vcxproj">
+      <Project>{634EA72D-65DB-3B1D-A5A8-CAF59A3EBE52}</Project>
+      <Name>tls_prf</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\tlsexttest.vcxproj">
+      <Project>{D997412D-CCBC-38FE-A9B2-DAA919C6FE49}</Project>
+      <Name>tlsexttest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\tlslegacytest.vcxproj">
+      <Project>{39002B1D-EF89-3E3E-9DC3-EBD039AE115E}</Project>
+      <Name>tlslegacytest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\tlstest.vcxproj">
+      <Project>{762D9F8D-51BE-3D94-8125-2CC2A8DBB359}</Project>
+      <Name>tlstest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\utf8test.vcxproj">
+      <Project>{4BC076D6-4D58-321A-90AF-ACC6905007E0}</Project>
+      <Name>utf8test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\valid_handshakes_terminate.vcxproj">
+      <Project>{5A594DEE-1621-3477-A181-8A8F4C83DB4E}</Project>
+      <Name>valid_handshakes_terminate</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\verifytest.vcxproj">
+      <Project>{D8D6B63A-08C0-3DED-8689-86A7F077D326}</Project>
+      <Name>verifytest</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\x25519test.vcxproj">
+      <Project>{3F2899BF-1DBC-3E54-9A26-255878952FFC}</Project>
+      <Name>x25519test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\x509_algor.vcxproj">
+      <Project>{411FD22F-53E9-3372-9503-842D28D82903}</Project>
+      <Name>x509_algor</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\x509_asn1.vcxproj">
+      <Project>{A7FE69FF-A19C-3F86-824C-BFA32B0C5BEF}</Project>
+      <Name>x509_asn1</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\x509_extensions_test.vcxproj">
+      <Project>{3562E66F-E797-3B9E-8A5A-C2ADF3E95814}</Project>
+      <Name>x509_extensions_test</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\x509_info.vcxproj">
+      <Project>{724C3843-3BE6-3F79-9F2A-FDF32B0C309F}</Project>
+      <Name>x509_info</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\x509attribute.vcxproj">
+      <Project>{8F9CE8BA-350C-3DFD-953D-B3DE9F322DDC}</Project>
+      <Name>x509attribute</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\x509name.vcxproj">
+      <Project>{ED47D287-D3F5-35B2-920C-322422C74A5E}</Project>
+      <Name>x509name</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\tests\x509req_ext.vcxproj">
+      <Project>{E5E45DB6-0864-32EC-A0E4-1F0ED9355FFA}</Project>
+      <Name>x509req_ext</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

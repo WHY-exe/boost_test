@@ -23,18 +23,15 @@
 #include <boost/log/utility/setup/common_attributes.hpp>
 #include <boost/log/utility/setup/console.hpp>
 #include <boost/log/utility/setup/file.hpp>
-#include <boost/outcome.hpp>
-#include <filesystem>
 #include <optional>
-#include <string>
+
+#include "type_def.hpp"
 
 namespace util {
-namespace fs = std::filesystem;
-namespace outcome = boost::outcome_v2;
-namespace logging = boost::log;
+namespace logging	= boost::log;
 namespace log_attrs = boost::log::attributes;
-namespace log_src = boost::log::sources;
-using log_level = boost::log::trivial::severity_level;
+namespace log_src	= boost::log::sources;
+using log_level		= boost::log::trivial::severity_level;
 class Logger {
 private:
 	logging::sources::severity_logger<logging::trivial::severity_level> _slg;
@@ -50,7 +47,7 @@ public:
 		return _slg;
 	};
 
-	static outcome::result<void> init_default(log_level svl, bool file_enabled, bool console_enabled);
+	static outcome::result<void> init_default(log_level svl, bool file_enabled, bool console_enabled) noexcept;
 
 	static outcome::result<void> init_default_sink(log_level svl, const std::optional<fs::path> &log_path = std::nullopt,
 			bool isConsoleEnabled = false);

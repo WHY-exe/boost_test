@@ -4,7 +4,6 @@
 
 #include "util/asio_as_result.hpp"
 #include "util/log.hpp"
-#include "util/util.hpp"
 
 using tcp = boost::asio::ip::tcp;
 
@@ -12,8 +11,8 @@ boost::asio::awaitable<void> echo(tcp::socket socket, tcp::endpoint peer_ep) {
 	try {
 		char buffer[1024] = { 0 };
 		while (true) {
-			boost::outcome_v2::result<size_t> read_size =
-					co_await socket.async_read_some(boost::asio::buffer(buffer), as_result(boost::asio::use_awaitable));
+			boost::outcome_v2::result<size_t> read_size = co_await socket.async_read_some(
+					boost::asio::buffer(buffer), CO_RESULT_TOKEN);
 			if (!read_size) {
 				if (read_size.error() == boost::asio::error::eof) {
 					LOG_MSG(info) << "connection close for client" << peer_ep.address().to_string() << ":"
@@ -26,7 +25,7 @@ boost::asio::awaitable<void> echo(tcp::socket socket, tcp::endpoint peer_ep) {
 			std::string_view sv_buffer(&buffer[0], read_size.value());
 			LOG_MSG(info) << "recieve " << sv_buffer << " from endpoint: " << peer_ep.address().to_string() << ":" << peer_ep.port();
 			boost::outcome_v2::result<size_t> write_res = co_await socket.async_write_some(
-					boost::asio::buffer(sv_buffer), as_result(boost::asio::use_awaitable));
+					boost::asio::buffer(sv_buffer), CO_RESULT_TOKEN);
 			if (!write_res) {
 				LOG_MSG(error) << "write error: " << write_res.error().message();
 				break;
@@ -44,12 +43,11 @@ boost::asio::awaitable<void> listen() {
 
 	try {
 		auto executor = co_await boost::asio::this_coro::executor;
-		tcp::acceptor acceptor(executor, { tcp::v4(), 7800 });
+		tcp::acceptor			 acceptor(executor, { tcp::v4(), 7800 });
 		LOG_MSG(info) << "listening on port 7800";
 		while (true) {
-			tcp::endpoint peer_ep;
-			boost::outcome_v2::result<tcp::socket> socket =
-					co_await acceptor.async_accept(peer_ep, as_result(boost::asio::use_awaitable));
+			tcp::endpoint						   peer_ep;
+			boost::outcome_v2::result<tcp::socket> socket = co_await acceptor.async_accept(peer_ep, CO_RESULT_TOKEN);
 			if (!socket) {
 				LOG_MSG(error) << "accept error: " << socket.error().message();
 				continue;

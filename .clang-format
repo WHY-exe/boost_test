@@ -8,9 +8,9 @@ AccessModifierOffset: -4
 AlignAfterOpenBracket: DontAlign
 # AlignArrayOfStructures: None
 # AlignConsecutiveMacros: None
-# AlignConsecutiveAssignments: None
+AlignConsecutiveAssignments: true
 # AlignConsecutiveBitFields: None
-# AlignConsecutiveDeclarations: None
+AlignConsecutiveDeclarations: true
 # AlignEscapedNewlines: Right
 AlignOperands:   DontAlign
 AlignTrailingComments: false
@@ -96,7 +96,7 @@ IncludeCategories:
 IndentCaseLabels: true
 # IndentCaseBlocks: false
 # IndentGotoLabels: true
-# IndentPPDirectives: None
+IndentPPDirectives: AfterHash
 # IndentExternBlock: AfterExternBlock
 # IndentRequires:  false
 IndentWidth:     4

@@ -17,6 +17,10 @@ Sample use:
 #include <type_traits>
 #include <utility>
 
+#ifndef CO_RESULT_TOKEN
+#	define CO_RESULT_TOKEN as_result(boost::asio::use_awaitable)
+#endif
+
 template <typename CompletionToken>
 struct as_result_t {
 	CompletionToken token_;
@@ -172,7 +176,7 @@ struct associated_executor<::detail::outcome_result_handler<Handler>, Executor> 
 
 	static type
 	get(const ::detail::outcome_result_handler<Handler> &h,
-			const Executor &ex = Executor()) noexcept {
+			const Executor								&ex = Executor()) noexcept {
 		return associated_executor<Handler, Executor>::get(h.handler_, ex);
 	}
 };
@@ -183,7 +187,7 @@ struct associated_allocator<::detail::outcome_result_handler<Handler>, Allocator
 
 	static type
 	get(const ::detail::outcome_result_handler<Handler> &h,
-			const Allocator &a = Allocator()) noexcept {
+			const Allocator								&a = Allocator()) noexcept {
 		return associated_allocator<Handler, Allocator>::get(h.handler_, a);
 	}
 };

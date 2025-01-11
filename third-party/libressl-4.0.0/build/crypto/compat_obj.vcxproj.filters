@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\empty.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\posix_win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\bsd-asprintf.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\freezero.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\getopt_long.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\getpagesize.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\getprogname_windows.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\reallocarray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\recallocarray.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\strcasecmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\strlcat.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\strlcpy.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\strndup.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\strsep.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\strtonum.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\syslog_r.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\explicit_bzero_win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\arc4random.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\arc4random_uniform.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\getentropy_win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\timingsafe_bcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\timingsafe_memcmp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{82516C95-8311-333F-BD6F-FE1791B960AC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

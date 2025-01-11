@@ -1,0 +1,72 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"apps/ocspcheck/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 26,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 27,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "bin",
+			"paths" : 
+			[
+				"apps/ocspcheck/RelWithDebInfo/ocspcheck.exe"
+			],
+			"targetId" : "ocspcheck::@c4c9e841c3d76c23d247",
+			"targetIndex" : 84,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"cxxModuleBmiTarget" : 
+			{
+				"id" : "ocspcheck::@c4c9e841c3d76c23d247",
+				"index" : 84
+			},
+			"destination" : "bin",
+			"type" : "cxxModuleBmi"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "share/man/man8",
+			"paths" : 
+			[
+				"apps/ocspcheck/ocspcheck.8"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "apps/ocspcheck",
+		"source" : "apps/ocspcheck"
+	}
+}

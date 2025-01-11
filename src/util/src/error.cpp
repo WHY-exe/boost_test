@@ -11,8 +11,8 @@ const char *ErrorCategory::name() const noexcept {
 
 std::string ErrorCategory::message(int c) const {
 	switch (static_cast<Error>(c)) {
-		case Error::Success:
-			return "conversion successful";
+		case Error::SUCCESSED:
+			return "no error";
 		case Error::NO_IMPLEMENTED:
 			return "no implemented";
 		case Error::STD_EXCEPTION:

@@ -1,0 +1,3647 @@
+{
+	"archive" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "/machine:x64",
+				"role" : "flags"
+			}
+		]
+	},
+	"artifacts" : 
+	[
+		{
+			"path" : "crypto/Debug/crypto.lib"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"install",
+			"add_definitions",
+			"target_include_directories",
+			"target_sources",
+			"export_symbol"
+		],
+		"files" : 
+		[
+			"crypto/CMakeLists.txt",
+			"CMakeLists.txt",
+			"cmake_export_symbol.cmake"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 839,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 861,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 873,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 142,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 148,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 154,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 245,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 122,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 147,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 137,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 759,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 154,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 144,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 123,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 149,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 150,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 151,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 152,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 143,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 153,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 135,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 134,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 136,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 140,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 124,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 125,
+				"parent" : 7
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 140,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 146,
+				"parent" : 7
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 854,
+				"parent" : 0
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 841,
+				"parent" : 0
+			},
+			{
+				"command" : 4,
+				"file" : 2,
+				"line" : 12,
+				"parent" : 34
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS -MP -W4  -wd4018 -wd4057 -wd4100 -wd4127 -wd4146 -wd4244 -wd4245 -wd4267 -wd4389 -wd4706 -wd4996 /Zi /Ob0 /Od /RTC1 -MDd"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 4,
+					"define" : "AES_ASM"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "BSAES_ASM"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "GHASH_ASM"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "HAVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "HAVE_STRNLEN"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "LIBRESSL_CRYPTO_INTERNAL"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "LIBRESSL_INTERNAL"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "MD5_ASM"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "NO_SYSLOG"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "OPENSSLDIR=\"C:/Windows/libressl/ssl\""
+				},
+				{
+					"backtrace" : 15,
+					"define" : "OPENSSL_CPUID_OBJ"
+				},
+				{
+					"backtrace" : 16,
+					"define" : "OPENSSL_IA32_SSE2"
+				},
+				{
+					"backtrace" : 17,
+					"define" : "OPENSSL_NO_HW_PADLOCK"
+				},
+				{
+					"backtrace" : 18,
+					"define" : "RSA_ASM"
+				},
+				{
+					"backtrace" : 19,
+					"define" : "SHA1_ASM"
+				},
+				{
+					"backtrace" : 20,
+					"define" : "SHA256_ASM"
+				},
+				{
+					"backtrace" : 21,
+					"define" : "SHA512_ASM"
+				},
+				{
+					"backtrace" : 22,
+					"define" : "VPAES_ASM"
+				},
+				{
+					"backtrace" : 23,
+					"define" : "WHIRLPOOL_ASM"
+				},
+				{
+					"backtrace" : 24,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 25,
+					"define" : "_CRT_DEPRECATED_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 26,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_POSIX_THREAD_SAFE_FUNCTIONS"
+				},
+				{
+					"backtrace" : 27,
+					"define" : "_REENTRANT"
+				},
+				{
+					"backtrace" : 28,
+					"define" : "_WIN32_WINNT=0x0600"
+				},
+				{
+					"backtrace" : 29,
+					"define" : "__BEGIN_HIDDEN_DECLS="
+				},
+				{
+					"backtrace" : 30,
+					"define" : "__END_HIDDEN_DECLS="
+				},
+				{
+					"backtrace" : 31,
+					"define" : "endbr64="
+				},
+				{
+					"backtrace" : 32,
+					"define" : "inline=__inline"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 33,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/include"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				455
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "compat_obj::@1d62b725e69adc70ad4a"
+		},
+		{
+			"id" : "crypto_obj::@1d62b725e69adc70ad4a"
+		},
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "crypto::@1d62b725e69adc70ad4a",
+	"install" : 
+	{
+		"destinations" : 
+		[
+			{
+				"backtrace" : 2,
+				"path" : "lib"
+			},
+			{
+				"backtrace" : 3,
+				"path" : "lib"
+			}
+		],
+		"prefix" : 
+		{
+			"path" : "C:/Program Files/LibreSSL"
+		}
+	},
+	"name" : "crypto",
+	"nameOnDisk" : "crypto.lib",
+	"paths" : 
+	{
+		"build" : "crypto",
+		"source" : "crypto"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50,
+				51,
+				52,
+				53,
+				54,
+				55,
+				56,
+				57,
+				58,
+				59,
+				60,
+				61,
+				62,
+				63,
+				64,
+				65,
+				66,
+				67,
+				68,
+				69,
+				70,
+				71,
+				72,
+				73,
+				74,
+				75,
+				76,
+				77,
+				78,
+				79,
+				80,
+				81,
+				82,
+				83,
+				84,
+				85,
+				86,
+				87,
+				88,
+				89,
+				90,
+				91,
+				92,
+				93,
+				94,
+				95,
+				96,
+				97,
+				98,
+				99,
+				100,
+				101,
+				102,
+				103,
+				104,
+				105,
+				106,
+				107,
+				108,
+				109,
+				110,
+				111,
+				112,
+				113,
+				114,
+				115,
+				116,
+				117,
+				118,
+				119,
+				120,
+				121,
+				122,
+				123,
+				124,
+				125,
+				126,
+				127,
+				128,
+				129,
+				130,
+				131,
+				132,
+				133,
+				134,
+				135,
+				136,
+				137,
+				138,
+				139,
+				140,
+				141,
+				142,
+				143,
+				144,
+				145,
+				146,
+				147,
+				148,
+				149,
+				150,
+				151,
+				152,
+				153,
+				154,
+				155,
+				156,
+				157,
+				158,
+				159,
+				160,
+				161,
+				162,
+				163,
+				164,
+				165,
+				166,
+				167,
+				168,
+				169,
+				170,
+				171,
+				172,
+				173,
+				174,
+				175,
+				176,
+				177,
+				178,
+				179,
+				180,
+				181,
+				182,
+				183,
+				184,
+				185,
+				186,
+				187,
+				188,
+				189,
+				190,
+				191,
+				192,
+				193,
+				194,
+				195,
+				196,
+				197,
+				198,
+				199,
+				200,
+				201,
+				202,
+				203,
+				204,
+				205,
+				206,
+				207,
+				208,
+				209,
+				210,
+				211,
+				212,
+				213,
+				214,
+				215,
+				216,
+				217,
+				218,
+				219,
+				220,
+				221,
+				222,
+				223,
+				224,
+				225,
+				226,
+				227,
+				228,
+				229,
+				230,
+				231,
+				232,
+				233,
+				234,
+				235,
+				236,
+				237,
+				238,
+				239,
+				240,
+				241,
+				242,
+				243,
+				244,
+				245,
+				246,
+				247,
+				248,
+				249,
+				250,
+				251,
+				252,
+				253,
+				254,
+				255,
+				256,
+				257,
+				258,
+				259,
+				260,
+				261,
+				262,
+				263,
+				264,
+				265,
+				266,
+				267,
+				268,
+				269,
+				270,
+				271,
+				272,
+				273,
+				274,
+				275,
+				276,
+				277,
+				278,
+				279,
+				280,
+				281,
+				282,
+				283,
+				284,
+				285,
+				286,
+				287,
+				288,
+				289,
+				290,
+				291,
+				292,
+				293,
+				294,
+				295,
+				296,
+				297,
+				298,
+				299,
+				300,
+				301,
+				302,
+				303,
+				304,
+				305,
+				306,
+				307,
+				308,
+				309,
+				310,
+				311,
+				312,
+				313,
+				314,
+				315,
+				316,
+				317,
+				318,
+				319,
+				320,
+				321,
+				322,
+				323,
+				324,
+				325,
+				326,
+				327,
+				328,
+				329,
+				330,
+				331,
+				332,
+				333,
+				334,
+				335,
+				336,
+				337,
+				338,
+				339,
+				340,
+				341,
+				342,
+				343,
+				344,
+				345,
+				346,
+				347,
+				348,
+				349,
+				350,
+				351,
+				352,
+				353,
+				354,
+				355,
+				356,
+				357,
+				358,
+				359,
+				360,
+				361,
+				362,
+				363,
+				364,
+				365,
+				366,
+				367,
+				368,
+				369,
+				370,
+				371,
+				372,
+				373,
+				374,
+				375,
+				376,
+				377,
+				378,
+				379,
+				380,
+				381,
+				382,
+				383,
+				384,
+				385,
+				386,
+				387,
+				388,
+				389,
+				390,
+				391,
+				392,
+				393,
+				394,
+				395,
+				396,
+				397,
+				398,
+				399,
+				400,
+				401,
+				402,
+				403,
+				404,
+				405,
+				406,
+				407,
+				408,
+				409,
+				410,
+				411,
+				412,
+				413,
+				414,
+				415,
+				416,
+				417,
+				418,
+				419,
+				420,
+				421,
+				422,
+				423,
+				424,
+				425,
+				426,
+				427,
+				428,
+				429,
+				430,
+				431,
+				432,
+				433,
+				434,
+				435,
+				436,
+				437,
+				438,
+				439,
+				440,
+				441,
+				442,
+				443,
+				444,
+				445,
+				446,
+				447,
+				448,
+				449,
+				450,
+				451,
+				452,
+				453,
+				454
+			]
+		},
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				455,
+				456
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/aes-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bsaes-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/vpaes-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/aesni-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/md5-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ghash-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rc4-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/sha1-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/sha256-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/sha512-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cpuid-masm-x86_64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cpt_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cryptlib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/crypto_ex_data.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/crypto_init.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cversion.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/malloc-wrapper.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/mem_clr.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/mem_dbg.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/o_fips.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/aes.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/aes_core.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/aes_ige.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_bitstr.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_enum.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_int.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_mbstr.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_object.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_octet.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_pkey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_print.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_pubkey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_strex.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_string.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_strnid.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_time.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_time_posix.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_time_tm.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_type.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/a_utf8.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn1_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn1_gen.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn1_item.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn1_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn1_old.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn1_old_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn1_par.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn1_types.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn_mime.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/asn_moid.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bio_asn1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bio_ndef.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p5_pbe.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p5_pbev2.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p8_pkey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/t_crl.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/t_req.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/t_spki.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/t_x509.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/t_x509a.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/tasn_dec.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/tasn_enc.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/tasn_fre.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/tasn_new.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/tasn_prn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/tasn_typ.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/tasn_utl.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_algor.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_attrib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_bignum.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_crl.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_exten.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_info.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_long.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_name.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_pkey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_pubkey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_req.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_sig.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_spki.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_val.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_x509.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_x509a.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/blowfish.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/b_dump.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/b_print.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/b_sock.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bf_buff.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bf_nbio.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bf_null.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bio_cb.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bio_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bio_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bio_meth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bss_acpt.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bss_bio.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bss_conn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bss_dgram.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bss_fd.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bss_file.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bss_mem.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bss_null.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bss_sock.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_add.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_bpsw.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_const.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_convert.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_ctx.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_div.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_exp.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_gcd.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_isqrt.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_kron.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_mod.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_mod_sqrt.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_mont.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_mul.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_prime.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_primitives.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_print.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_rand.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_recp.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_shift.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_small_primes.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_sqr.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bn_word.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/buf_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/buffer.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bs_ber.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bs_cbb.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bs_cbs.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/camellia.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cast.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/chacha.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cm_ameth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cm_pmeth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cmac.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_asn1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_att.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_dd.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_enc.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_env.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_ess.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_io.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_kari.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_pwri.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_sd.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cms_smime.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/conf_api.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/conf_def.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/conf_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/conf_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/conf_mall.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/conf_mod.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/conf_sap.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_b64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_log.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_oct.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_policy.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_prn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_sct.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_sct_ctx.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_vfy.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ct_x509v3.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/curve25519-generic.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/curve25519.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/des.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/des_cksum.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/des_enc.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/des_fcrypt.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/des_key.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dh_ameth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dh_asn1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dh_check.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dh_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dh_gen.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dh_key.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dh_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dh_pmeth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_ameth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_asn1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_gen.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_key.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_meth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_ossl.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_pmeth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/dsa_prn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_ameth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_asn1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_check.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_curve.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_cvt.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_key.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_kmeth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_mult.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_oct.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_pmeth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ec_print.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/eck_prn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ecp_mont.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ecp_oct.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ecp_smpl.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ecx_methods.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ecdh.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ecdsa.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/engine_stubs.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/err_all.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/err_prn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bio_b64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bio_enc.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/bio_md.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_aes.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_bf.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_camellia.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_cast.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_chacha.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_chacha20poly1305.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_des.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_des3.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_idea.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_null.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_rc2.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_rc4.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_sm4.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/e_xcbc_d.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/evp_aead.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/evp_cipher.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/evp_digest.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/evp_encode.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/evp_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/evp_key.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/evp_names.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/evp_pbe.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/evp_pkey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/m_md4.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/m_md5.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/m_md5_sha1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/m_null.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/m_ripemd.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/m_sha1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/m_sha3.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/m_sigver.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/m_sm3.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p_legacy.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p_sign.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p_verify.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pmeth_fn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pmeth_gn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pmeth_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/hkdf.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/hm_ameth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/hm_pmeth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/hmac.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/idea.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/hkdf_evp.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/kdf_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/tls1_prf.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/lhash.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/md4.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/md5.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cbc128.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ccm128.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/cfb128.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ctr128.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/gcm128.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ofb128.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/xts128.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/obj_dat.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/obj_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/obj_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/obj_xref.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ocsp_asn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ocsp_cl.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ocsp_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ocsp_ext.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ocsp_ht.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ocsp_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ocsp_prn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ocsp_srv.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ocsp_vfy.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_all.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_info.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_oth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_pk8.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_pkey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_sign.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_x509.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pem_xaux.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pvkfmt.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_add.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_asn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_attr.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_crt.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_decr.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_init.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_key.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_kiss.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_mutl.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_npas.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_p8d.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_p8e.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_sbag.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/p12_utl.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pk12err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pk7_asn1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pk7_attr.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pk7_doit.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pk7_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pk7_mime.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pk7_smime.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/pkcs7err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/poly1305.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rand_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rand_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/randfile.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rc2_cbc.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rc2_ecb.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rc2_skey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rc2cfb64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rc2ofb64.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rc4.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ripemd.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_ameth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_asn1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_blinding.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_chk.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_eay.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_gen.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_meth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_none.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_oaep.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_pk1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_pmeth.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_prn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_pss.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_saos.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_sign.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/rsa_x931.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/sha1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/sha256.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/sha3.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/sha512.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/sm3.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/sm4.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/stack.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_asn1.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_conf.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_req_print.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_req_utils.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_rsp_print.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_rsp_sign.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_rsp_utils.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_rsp_verify.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ts_verify_ctx.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/txt_db.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ui_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ui_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ui_null.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/by_dir.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/by_file.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/by_mem.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_addr.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_akey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_akeya.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_alt.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_asid.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_att.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_bcons.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_bitst.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_cmp.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_conf.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_constraints.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_cpols.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_crld.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_d2.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_def.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_err.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_ext.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_extku.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_genn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_ia5.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_info.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_int.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_issuer_cache.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_lib.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_lu.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_ncons.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_obj.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_ocsp.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_pcons.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_pku.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_pmaps.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_policy.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_prn.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_purp.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_r2x.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_req.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_set.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_siginfo.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_skey.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_trs.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_txt.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_utl.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_v3.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_verify.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_vfy.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509_vpm.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509cset.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509name.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509rset.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509spki.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x509type.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/x_all.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/crypto_lock_win.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/b_win.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/crypto_obj.dir/$(Configuration)/ui_openssl_win.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/empty.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/posix_win.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/bsd-asprintf.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/freezero.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/getopt_long.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/getpagesize.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/getprogname_windows.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/reallocarray.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/recallocarray.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/strcasecmp.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/strlcat.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/strlcpy.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/strndup.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/strsep.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/strtonum.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/syslog_r.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/explicit_bzero_win.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/arc4random.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/arc4random_uniform.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/getentropy_win.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/timingsafe_bcmp.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "build/crypto/compat_obj.dir/$(Configuration)/timingsafe_memcmp.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "crypto/empty.c",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 35,
+			"path" : "build/crypto/crypto_p.def",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

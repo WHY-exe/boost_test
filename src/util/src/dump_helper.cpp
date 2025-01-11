@@ -3,19 +3,19 @@
 #include <cstdio>
 
 #ifdef WIN32
-#include <DbgHelp.h>
-#include <corecrt_io.h>
-#include <direct.h>
-#include <array>
-#include <ctime>
+#	include <DbgHelp.h>
+#	include <corecrt_io.h>
+#	include <direct.h>
+#	include <array>
+#	include <ctime>
 
-#pragma comment(lib, "Dbghelp.lib")
+#	pragma comment(lib, "Dbghelp.lib")
 #endif
 
 namespace util::dmp_helper {
 #ifdef WIN32
 bool GenFilePath(char *buf, uint32_t path_len) noexcept {
-	time_t t = 0;
+	time_t	  t = 0;
 	struct tm local {};
 	t = time(nullptr);
 	localtime_s(&local, &t);
@@ -36,10 +36,10 @@ int GenDump(LPEXCEPTION_POINTERS excep_ptr, const char *file_path) noexcept {
 	HANDLE hFile = ::CreateFileA(file_path, GENERIC_WRITE, 0, NULL, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, NULL);
 	if (INVALID_HANDLE_VALUE != hFile) {
 		MINIDUMP_EXCEPTION_INFORMATION minidumpExceptionInformation;
-		minidumpExceptionInformation.ThreadId = GetCurrentThreadId();
+		minidumpExceptionInformation.ThreadId		   = GetCurrentThreadId();
 		minidumpExceptionInformation.ExceptionPointers = excep_ptr;
-		minidumpExceptionInformation.ClientPointers = TRUE;
-		bool isMiniDumpGenerated = MiniDumpWriteDump(GetCurrentProcess(), GetCurrentProcessId(), hFile, MINIDUMP_TYPE::MiniDumpNormal, &minidumpExceptionInformation, nullptr, nullptr);
+		minidumpExceptionInformation.ClientPointers	   = TRUE;
+		bool isMiniDumpGenerated					   = MiniDumpWriteDump(GetCurrentProcess(), GetCurrentProcessId(), hFile, MINIDUMP_TYPE::MiniDumpNormal, &minidumpExceptionInformation, nullptr, nullptr);
 		CloseHandle(hFile);
 		if (!isMiniDumpGenerated) {
 		}

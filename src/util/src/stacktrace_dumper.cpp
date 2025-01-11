@@ -11,17 +11,15 @@
 namespace util {
 void StacktraceDumper::_signal_handler(int signum) {
 	::signal(signum, SIG_DFL);
-#ifdef WIN32
+#if defined(WIN32)
 	util::dmp_helper::SnapshotMem();
-#else
-#ifndef linux
+#elif defined(linux)
 	const std::filesystem::path file_path = StacktraceDumper::_get_dump_path();
 	// create parent path recursivly
 	if (!std::filesystem::exists(file_path.parent_path())) {
 		std::filesystem::create_directories(file_path.parent_path());
 	}
 	boost::stacktrace::safe_dump_to(file_path.string().c_str());
-#endif
 #endif
 	::raise(SIGABRT);
 }

@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 3.11...3.20)
+add_subdirectory(libressl-4.0.0)
+add_subdirectory(fmt)
 if(BUILD_BOOST_FROM_SRC)
     set(BOOST_INCLUDE_LIBRARIES
         asio
@@ -13,4 +15,3 @@ if(BUILD_BOOST_FROM_SRC)
     set(BOOST_BUILD_OUPUT_DIR "${CMAKE_BINARY_DIR}/boost")
     add_subdirectory(${BOOST_SRC_PATH} ${BOOST_BUILD_OUPUT_DIR} EXCLUDE_FROM_ALL)
 endif()
-add_subdirectory(openssl-cmake)

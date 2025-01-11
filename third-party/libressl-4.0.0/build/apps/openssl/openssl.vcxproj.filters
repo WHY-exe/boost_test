@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\apps.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\asn1pars.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\ca.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\ciphers.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\crl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\crl2p7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\cms.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\dgst.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\dh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\dhparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\dsa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\dsaparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\ec.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\ecparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\enc.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\errstr.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\gendh.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\gendsa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\genpkey.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\genrsa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\ocsp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\openssl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\passwd.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\pkcs12.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\pkcs7.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\pkcs8.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\pkey.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\pkeyparam.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\pkeyutl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\prime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\rand.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\req.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\rsa.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\rsautl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\s_cb.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\s_client.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\s_server.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\s_socket.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\s_time.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\sess_id.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\smime.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\speed.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\ts.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\verify.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\version.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\x509.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\apps_win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\certhash_win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\compat\poll_win.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\apps\openssl\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\empty.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\posix_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\bsd-asprintf.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\freezero.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getopt_long.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getpagesize.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getprogname_windows.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\reallocarray.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\recallocarray.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strcasecmp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strlcat.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strlcpy.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strndup.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strsep.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strtonum.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\syslog_r.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\explicit_bzero_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\arc4random.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\arc4random_uniform.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getentropy_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\timingsafe_bcmp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\timingsafe_memcmp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{A924DEE5-E344-3252-B80D-5C2CC5AFA251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{82516C95-8311-333F-BD6F-FE1791B960AC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

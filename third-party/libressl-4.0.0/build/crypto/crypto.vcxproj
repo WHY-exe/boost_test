@@ -1,0 +1,779 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4876F08B-21B4-3EF8-9F9D-56CC416254A3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>crypto</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">crypto.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">crypto.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">crypto.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">crypto.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">crypto</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR=\"C:/Windows/libressl/ssl\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR=\"C:/Windows/libressl/ssl\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR=\"C:/Windows/libressl/ssl\";CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR=\"C:/Windows/libressl/ssl\";CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\aes-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bsaes-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\vpaes-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\aesni-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\md5-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ghash-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rc4-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\sha1-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\sha256-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\sha512-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cpuid-masm-x86_64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cpt_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cryptlib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\crypto_ex_data.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\crypto_init.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cversion.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\malloc-wrapper.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\mem_clr.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\mem_dbg.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\o_fips.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\aes.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\aes_core.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\aes_ige.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_bitstr.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_enum.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_int.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_mbstr.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_object.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_octet.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_pkey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_print.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_pubkey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_strex.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_string.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_strnid.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_time.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_time_posix.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_time_tm.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_type.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\a_utf8.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn1_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn1_gen.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn1_item.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn1_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn1_old.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn1_old_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn1_par.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn1_types.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn_mime.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\asn_moid.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bio_asn1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bio_ndef.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p5_pbe.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p5_pbev2.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p8_pkey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\t_crl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\t_req.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\t_spki.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\t_x509.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\t_x509a.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\tasn_dec.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\tasn_enc.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\tasn_fre.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\tasn_new.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\tasn_prn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\tasn_typ.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\tasn_utl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_algor.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_attrib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_bignum.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_crl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_exten.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_info.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_long.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_name.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_pkey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_pubkey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_req.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_sig.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_spki.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_val.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_x509.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_x509a.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\blowfish.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\b_dump.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\b_print.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\b_sock.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bf_buff.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bf_nbio.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bf_null.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bio_cb.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bio_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bio_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bio_meth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bss_acpt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bss_bio.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bss_conn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bss_dgram.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bss_fd.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bss_file.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bss_mem.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bss_null.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bss_sock.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_add.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_bpsw.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_const.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_convert.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_ctx.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_div.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_exp.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_gcd.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_isqrt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_kron.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_mod.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_mod_sqrt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_mont.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_mul.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_prime.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_primitives.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_print.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_rand.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_recp.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_shift.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_small_primes.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_sqr.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bn_word.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\buf_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\buffer.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bs_ber.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bs_cbb.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bs_cbs.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\camellia.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cast.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\chacha.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cm_ameth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cm_pmeth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cmac.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_asn1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_att.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_dd.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_enc.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_env.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_ess.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_io.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_kari.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_pwri.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_sd.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cms_smime.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\conf_api.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\conf_def.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\conf_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\conf_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\conf_mall.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\conf_mod.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\conf_sap.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_b64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_log.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_oct.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_policy.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_prn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_sct.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_sct_ctx.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_vfy.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ct_x509v3.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\curve25519-generic.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\curve25519.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\des.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\des_cksum.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\des_enc.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\des_fcrypt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\des_key.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dh_ameth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dh_asn1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dh_check.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dh_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dh_gen.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dh_key.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dh_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dh_pmeth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_ameth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_asn1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_gen.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_key.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_meth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_ossl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_pmeth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\dsa_prn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_ameth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_asn1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_check.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_curve.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_cvt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_key.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_kmeth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_mult.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_oct.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_pmeth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ec_print.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\eck_prn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ecp_mont.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ecp_oct.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ecp_smpl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ecx_methods.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ecdh.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ecdsa.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\engine_stubs.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\err_all.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\err_prn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bio_b64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bio_enc.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\bio_md.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_aes.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_bf.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_camellia.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_cast.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_chacha.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_chacha20poly1305.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_des.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_des3.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_idea.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_null.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_rc2.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_rc4.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_sm4.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\e_xcbc_d.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\evp_aead.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\evp_cipher.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\evp_digest.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\evp_encode.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\evp_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\evp_key.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\evp_names.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\evp_pbe.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\evp_pkey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\m_md4.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\m_md5.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\m_md5_sha1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\m_null.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\m_ripemd.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\m_sha1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\m_sha3.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\m_sigver.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\m_sm3.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p_legacy.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p_sign.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p_verify.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pmeth_fn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pmeth_gn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pmeth_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\hkdf.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\hm_ameth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\hm_pmeth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\hmac.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\idea.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\hkdf_evp.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\kdf_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\tls1_prf.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\lhash.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\md4.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\md5.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cbc128.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ccm128.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\cfb128.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ctr128.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\gcm128.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ofb128.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\xts128.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\obj_dat.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\obj_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\obj_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\obj_xref.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ocsp_asn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ocsp_cl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ocsp_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ocsp_ext.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ocsp_ht.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ocsp_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ocsp_prn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ocsp_srv.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ocsp_vfy.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_all.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_info.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_oth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_pk8.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_pkey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_sign.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_x509.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pem_xaux.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pvkfmt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_add.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_asn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_attr.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_crt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_decr.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_init.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_key.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_kiss.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_mutl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_npas.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_p8d.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_p8e.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_sbag.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\p12_utl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pk12err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pk7_asn1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pk7_attr.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pk7_doit.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pk7_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pk7_mime.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pk7_smime.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\pkcs7err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\poly1305.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rand_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rand_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\randfile.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rc2_cbc.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rc2_ecb.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rc2_skey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rc2cfb64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rc2ofb64.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rc4.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ripemd.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_ameth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_asn1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_blinding.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_chk.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_eay.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_gen.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_meth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_none.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_oaep.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_pk1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_pmeth.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_prn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_pss.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_saos.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_sign.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\rsa_x931.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\sha1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\sha256.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\sha3.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\sha512.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\sm3.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\sm4.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\stack.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_asn1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_conf.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_req_print.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_req_utils.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_rsp_print.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_rsp_sign.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_rsp_utils.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_rsp_verify.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ts_verify_ctx.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\txt_db.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ui_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ui_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ui_null.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\by_dir.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\by_file.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\by_mem.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_addr.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_akey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_akeya.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_alt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_asid.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_att.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_bcons.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_bitst.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_cmp.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_conf.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_constraints.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_cpols.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_crld.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_d2.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_def.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_ext.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_extku.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_genn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_ia5.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_info.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_int.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_issuer_cache.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_lu.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_ncons.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_obj.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_ocsp.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_pcons.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_pku.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_pmaps.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_policy.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_prn.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_purp.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_r2x.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_req.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_set.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_siginfo.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_skey.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_trs.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_txt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_utl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_v3.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_verify.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_vfy.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509_vpm.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509cset.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509name.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509rset.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509spki.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x509type.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\x_all.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\crypto_lock_win.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\b_win.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.dir\$(Configuration)\ui_openssl_win.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\empty.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\posix_win.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\bsd-asprintf.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\freezero.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getopt_long.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getpagesize.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getprogname_windows.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\reallocarray.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\recallocarray.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strcasecmp.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strlcat.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strlcpy.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strndup.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strsep.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strtonum.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\syslog_r.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\explicit_bzero_win.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\arc4random.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\arc4random_uniform.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getentropy_win.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\timingsafe_bcmp.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\timingsafe_memcmp.obj" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\empty.c" />
+    <None Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_p.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{C2144665-9388-36B0-AE24-06A8D64D8C1E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.vcxproj">
+      <Project>{D2340DB1-F3BE-3914-BE31-5A2E45FB504E}</Project>
+      <Name>compat_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto_obj.vcxproj">
+      <Project>{A7C7A0ED-8EDE-38FB-AE10-661C7F8A6B80}</Project>
+      <Name>crypto_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

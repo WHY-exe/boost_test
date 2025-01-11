@@ -1,0 +1,821 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "ssl/ssl_obj.dir/Release/bio_ssl.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/d1_both.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/d1_lib.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/d1_pkt.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/d1_srtp.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/pqueue.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/s3_cbc.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/s3_lib.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_asn1.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_both.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_cert.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_ciph.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_ciphers.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_clnt.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_err.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_init.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_kex.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_lib.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_methods.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_packet.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_pkt.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_rsa.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_seclevel.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_sess.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_sigalgs.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_srvr.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_stat.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_tlsext.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_transcript.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_txt.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/ssl_versions.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/t1_enc.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/t1_lib.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls_buffer.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls_content.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls_key_share.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls_lib.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls12_key_schedule.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls12_lib.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls12_record_layer.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_client.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_error.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_handshake.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_handshake_msg.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_key_schedule.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_legacy.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_lib.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_quic.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_record.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_record_layer.obj"
+		},
+		{
+			"path" : "ssl/ssl_obj.dir/Release/tls13_server.obj"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_definitions",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"ssl/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 63,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 154,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 245,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 122,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 137,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 123,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 138,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 135,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 134,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 136,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 140,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 124,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 125,
+				"parent" : 2
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 146,
+				"parent" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 64,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 126,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "/DWIN32 /D_WINDOWS -MP -W4  -wd4018 -wd4057 -wd4100 -wd4127 -wd4146 -wd4244 -wd4245 -wd4267 -wd4389 -wd4706 -wd4996 /O2 /Ob2  -MD"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 3,
+					"define" : "HAVE_LITTLE_ENDIAN"
+				},
+				{
+					"backtrace" : 4,
+					"define" : "HAVE_STRNLEN"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LIBRESSL_INTERNAL"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "NO_SYSLOG"
+				},
+				{
+					"backtrace" : 7,
+					"define" : "OPENSSL_NO_HW_PADLOCK"
+				},
+				{
+					"backtrace" : 8,
+					"define" : "WIN32_LEAN_AND_MEAN"
+				},
+				{
+					"backtrace" : 9,
+					"define" : "_CRT_DEPRECATED_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 10,
+					"define" : "_CRT_SECURE_NO_WARNINGS"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_POSIX_THREAD_SAFE_FUNCTIONS"
+				},
+				{
+					"backtrace" : 11,
+					"define" : "_REENTRANT"
+				},
+				{
+					"backtrace" : 12,
+					"define" : "_WIN32_WINNT=0x0600"
+				},
+				{
+					"backtrace" : 13,
+					"define" : "__BEGIN_HIDDEN_DECLS="
+				},
+				{
+					"backtrace" : 14,
+					"define" : "__END_HIDDEN_DECLS="
+				},
+				{
+					"backtrace" : 15,
+					"define" : "inline=__inline"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/."
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/hidden"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/../crypto"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/../crypto/bio"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/../include/compat"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/../include"
+				},
+				{
+					"backtrace" : 16,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/include"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/../crypto/arch/amd64"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"id" : "ZERO_CHECK::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "ssl_obj::@231ae96ba859d0dd94ae",
+	"name" : "ssl_obj",
+	"paths" : 
+	{
+		"build" : "ssl",
+		"source" : "ssl"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29,
+				30,
+				31,
+				32,
+				33,
+				34,
+				35,
+				36,
+				37,
+				38,
+				39,
+				40,
+				41,
+				42,
+				43,
+				44,
+				45,
+				46,
+				47,
+				48,
+				49,
+				50
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/bio_ssl.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/d1_both.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/d1_lib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/d1_pkt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/d1_srtp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/pqueue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/s3_cbc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/s3_lib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_asn1.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_both.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_cert.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_ciph.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_ciphers.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_clnt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_err.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_init.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_kex.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_lib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_methods.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_packet.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_pkt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_rsa.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_seclevel.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_sess.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_sigalgs.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_srvr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_stat.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_tlsext.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_transcript.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_txt.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/ssl_versions.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/t1_enc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/t1_lib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls_buffer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls_content.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls_key_share.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls_lib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls12_key_schedule.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls12_lib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls12_record_layer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_client.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_error.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_handshake.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_handshake_msg.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_key_schedule.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_legacy.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_lib.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_quic.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_record.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_record_layer.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "ssl/tls13_server.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

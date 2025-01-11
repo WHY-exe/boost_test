@@ -1,0 +1,87 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"tls/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 91,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 97,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"tls/Release/tls.lib"
+			],
+			"targetId" : "tls::@c786e137f4de3bc64763",
+			"targetIndex" : 118,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"tls/Release/tls.lib"
+			],
+			"targetId" : "tls::@c786e137f4de3bc64763",
+			"targetIndex" : 118,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/LibreSSL",
+			"exportName" : "TLS-target",
+			"exportTargets" : 
+			[
+				{
+					"id" : "tls::@c786e137f4de3bc64763",
+					"index" : 118
+				}
+			],
+			"paths" : 
+			[
+				"tls/CMakeFiles/Export/ae115adb3c2f21fa75e29177c777fafa/LibreSSL-TLS.cmake"
+			],
+			"type" : "export"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "tls",
+		"source" : "tls"
+	}
+}

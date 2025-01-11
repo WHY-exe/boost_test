@@ -1,11 +1,11 @@
 #include "util.hpp"
 #include "error.hpp"
 #ifdef WIN32
-#include <Windows.h>
+#	include <Windows.h>
 #endif
 
 namespace util {
-boost::outcome_v2::result<fs::path> program_location() noexcept {
+outcome::result<fs::path> program_location() noexcept {
 	try {
 #if defined(WIN32)
 		TString ret;
@@ -18,7 +18,7 @@ boost::outcome_v2::result<fs::path> program_location() noexcept {
 		return ret;
 #elif defined(linux)
 		constexpr size_t MAXBUFSIZE = 1024;
-		std::string ret;
+		std::string		 ret;
 		ret.resize(MAXBUFSIZE, '\0');
 		ssize_t file_path_len = readlink("/proc/self/exe", &ret[0], MAXBUFSIZE);
 		if (file_path_len == -1) {

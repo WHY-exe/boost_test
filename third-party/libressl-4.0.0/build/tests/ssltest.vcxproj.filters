@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\tests\ssltest.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\empty.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\posix_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\bsd-asprintf.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\freezero.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getopt_long.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getpagesize.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getprogname_windows.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\reallocarray.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\recallocarray.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strcasecmp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strlcat.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strlcpy.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strndup.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strsep.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\strtonum.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\syslog_r.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\explicit_bzero_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\arc4random.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\arc4random_uniform.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\getentropy_win.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\timingsafe_bcmp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\compat_obj.dir\$(Configuration)\timingsafe_memcmp.obj">
+      <Filter>Object Libraries</Filter>
+    </Object>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Object Libraries">
+      <UniqueIdentifier>{A924DEE5-E344-3252-B80D-5C2CC5AFA251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{82516C95-8311-333F-BD6F-FE1791B960AC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{96367EDB-195A-39CF-B153-69B11230E009}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ssl</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ssl.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ssl.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ssl.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ssl.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">ssl</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\ssl\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/ssl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/ssl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/ssl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/ssl/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/ssl/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\bio_ssl.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\d1_both.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\d1_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\d1_pkt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\d1_srtp.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\pqueue.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\s3_cbc.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\s3_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_asn1.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_both.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_cert.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_ciph.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_ciphers.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_clnt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_err.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_init.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_kex.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_methods.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_packet.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_pkt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_rsa.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_seclevel.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_sess.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_sigalgs.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_srvr.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_stat.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_tlsext.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_transcript.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_txt.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\ssl_versions.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\t1_enc.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\t1_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls_buffer.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls_content.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls_key_share.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls12_key_schedule.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls12_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls12_record_layer.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_client.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_error.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_handshake.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_handshake_msg.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_key_schedule.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_legacy.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_lib.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_quic.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_record.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_record_layer.obj" />
+    <Object Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.dir\$(Configuration)\tls13_server.obj" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\ssl\empty.c" />
+    <None Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{C2144665-9388-36B0-AE24-06A8D64D8C1E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\crypto.vcxproj">
+      <Project>{4876F08B-21B4-3EF8-9F9D-56CC416254A3}</Project>
+      <Name>crypto</Name>
+    </ProjectReference>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ssl\ssl_obj.vcxproj">
+      <Project>{72CCC1AB-3A64-3F16-8F37-C38BEE9717C7}</Project>
+      <Name>ssl_obj</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

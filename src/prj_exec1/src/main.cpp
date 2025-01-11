@@ -9,6 +9,8 @@
 #include "util/log.hpp"
 #include "util/stacktrace_dumper.h"
 
+#include <openssl/ssl.h>
+
 static void terminate_handle() {
 	try {
 		LOG_MSG(error) << "Catch unhandle exception, trace: \n"

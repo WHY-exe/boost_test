@@ -1,0 +1,743 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{A7C7A0ED-8EDE-38FB-AE10-661C7F8A6B80}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>crypto_obj</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">crypto_obj.dir\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">crypto_obj.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">crypto_obj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">crypto_obj.dir\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">crypto_obj.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">crypto_obj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">crypto_obj.dir\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">crypto_obj.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">crypto_obj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">crypto_obj.dir\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">crypto_obj.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">crypto_obj</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR=\"C:/Windows/libressl/ssl\";CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR=\"C:/Windows/libressl/ssl\";CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR=\"C:/Windows/libressl/ssl\";CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4018;4057;4100;4127;4146;4244;4245;4267;4389;4706;4996</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR=\"C:/Windows/libressl/ssl\";CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;LIBRESSL_INTERNAL;OPENSSL_NO_HW_PADLOCK;__BEGIN_HIDDEN_DECLS=;__END_HIDDEN_DECLS=;_CRT_SECURE_NO_WARNINGS;_CRT_DEPRECATED_NO_WARNINGS;_REENTRANT;_POSIX_THREAD_SAFE_FUNCTIONS;NO_SYSLOG;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x0600;inline=__inline;HAVE_LITTLE_ENDIAN;HAVE_STRNLEN;LIBRESSL_CRYPTO_INTERNAL;endbr64=;AES_ASM;BSAES_ASM;VPAES_ASM;OPENSSL_IA32_SSE2;MD5_ASM;GHASH_ASM;RSA_ASM;SHA1_ASM;SHA256_ASM;SHA512_ASM;WHIRLPOOL_ASM;OPENSSL_CPUID_OBJ;OPENSSLDIR="C:/Windows/libressl/ssl";CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <IncludePaths>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(IncludePaths)</IncludePaths>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\.;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hidden;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include\compat;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\..\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\include;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\arch\amd64;C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\arch\amd64;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/crypto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0 -BC:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build --check-stamp-file C:/Users/29478/source/repos/cpp/boost_test/third-party/libressl-4.0.0/build/crypto/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\crypto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\aes\aes-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\aes\bsaes-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\aes\vpaes-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\aes\aesni-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\md5\md5-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes\ghash-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rc4\rc4-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha\sha1-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha\sha256-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha\sha512-masm-x86_64.S" />
+    <MASM Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cpuid-masm-x86_64.S" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cpt_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cryptlib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\crypto_ex_data.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\crypto_init.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cversion.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\malloc-wrapper.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\mem_clr.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\mem_dbg.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\o_fips.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\aes\aes.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\aes\aes_core.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\aes\aes_ige.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_bitstr.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_enum.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_int.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_mbstr.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_object.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_octet.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_pkey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_print.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_pubkey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_strex.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_string.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_strnid.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_time.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_time_posix.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_time_tm.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_type.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\a_utf8.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn1_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn1_gen.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn1_item.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn1_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn1_old.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn1_old_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn1_par.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn1_types.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn_mime.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\asn_moid.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\bio_asn1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\bio_ndef.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\p5_pbe.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\p5_pbev2.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\p8_pkey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\t_crl.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\t_req.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\t_spki.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\t_x509.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\t_x509a.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\tasn_dec.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\tasn_enc.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\tasn_fre.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\tasn_new.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\tasn_prn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\tasn_typ.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\tasn_utl.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_algor.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_attrib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_bignum.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_crl.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_exten.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_info.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_long.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_name.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_pkey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_pubkey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_req.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_sig.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_spki.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_val.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_x509.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\asn1\x_x509a.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bf\blowfish.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\b_dump.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\b_print.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\b_sock.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bf_buff.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bf_nbio.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bf_null.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bio_cb.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bio_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bio_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bio_meth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bss_acpt.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bss_bio.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bss_conn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bss_dgram.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bss_fd.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bss_file.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bss_mem.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bss_null.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\bss_sock.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_add.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_bpsw.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_const.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_convert.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_ctx.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_div.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_exp.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_gcd.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_isqrt.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_kron.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_mod.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_mod_sqrt.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_mont.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_mul.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_prime.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_primitives.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_print.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_rand.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_recp.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_shift.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_small_primes.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_sqr.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bn\bn_word.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\buffer\buf_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\buffer\buffer.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring\bs_ber.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring\bs_cbb.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bytestring\bs_cbs.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\camellia\camellia.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cast\cast.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\chacha\chacha.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cmac\cm_ameth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cmac\cm_pmeth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cmac\cmac.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_asn1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_att.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_dd.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_enc.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_env.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_ess.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_io.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_kari.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_pwri.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_sd.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\cms\cms_smime.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf\conf_api.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf\conf_def.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf\conf_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf\conf_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf\conf_mall.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf\conf_mod.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\conf\conf_sap.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_b64.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_log.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_oct.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_policy.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_prn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_sct.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_sct_ctx.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_vfy.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ct\ct_x509v3.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519\curve25519-generic.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\curve25519\curve25519.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\des\des.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\des\des_cksum.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\des\des_enc.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\des\des_fcrypt.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\des\des_key.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh\dh_ameth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh\dh_asn1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh\dh_check.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh\dh_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh\dh_gen.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh\dh_key.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh\dh_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dh\dh_pmeth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_ameth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_asn1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_gen.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_key.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_meth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_ossl.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_pmeth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\dsa\dsa_prn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_ameth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_asn1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_check.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_curve.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_cvt.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_key.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_kmeth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_mult.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_oct.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_pmeth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ec_print.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\eck_prn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ecp_mont.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ecp_oct.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ecp_smpl.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ec\ecx_methods.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdh\ecdh.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ecdsa\ecdsa.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\engine\engine_stubs.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err\err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err\err_all.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\err\err_prn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\bio_b64.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\bio_enc.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\bio_md.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_aes.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_bf.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_camellia.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_cast.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_chacha.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_chacha20poly1305.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_des.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_des3.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_idea.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_null.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_rc2.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_rc4.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_sm4.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\e_xcbc_d.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\evp_aead.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\evp_cipher.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\evp_digest.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\evp_encode.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\evp_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\evp_key.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\evp_names.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\evp_pbe.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\evp_pkey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\m_md4.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\m_md5.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\m_md5_sha1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\m_null.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\m_ripemd.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\m_sha1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\m_sha3.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\m_sigver.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\m_sm3.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\p_legacy.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\p_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\p_sign.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\p_verify.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\pmeth_fn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\pmeth_gn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\evp\pmeth_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hkdf\hkdf.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac\hm_ameth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac\hm_pmeth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\hmac\hmac.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\idea\idea.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\kdf\hkdf_evp.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\kdf\kdf_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\kdf\tls1_prf.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\lhash\lhash.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\md4\md4.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\md5\md5.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes\cbc128.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes\ccm128.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes\cfb128.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes\ctr128.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes\gcm128.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes\ofb128.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\modes\xts128.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\objects\obj_dat.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\objects\obj_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\objects\obj_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\objects\obj_xref.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp\ocsp_asn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp\ocsp_cl.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp\ocsp_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp\ocsp_ext.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp\ocsp_ht.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp\ocsp_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp\ocsp_prn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp\ocsp_srv.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ocsp\ocsp_vfy.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_all.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_info.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_oth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_pk8.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_pkey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_sign.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_x509.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pem_xaux.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pem\pvkfmt.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_add.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_asn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_attr.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_crt.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_decr.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_init.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_key.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_kiss.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_mutl.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_npas.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_p8d.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_p8e.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_sbag.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\p12_utl.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs12\pk12err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs7\pk7_asn1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs7\pk7_attr.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs7\pk7_doit.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs7\pk7_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs7\pk7_mime.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs7\pk7_smime.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\pkcs7\pkcs7err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\poly1305\poly1305.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rand\rand_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rand\rand_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rand\randfile.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rc2\rc2_cbc.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rc2\rc2_ecb.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rc2\rc2_skey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rc2\rc2cfb64.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rc2\rc2ofb64.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rc4\rc4.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ripemd\ripemd.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_ameth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_asn1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_blinding.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_chk.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_eay.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_gen.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_meth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_none.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_oaep.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_pk1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_pmeth.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_prn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_pss.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_saos.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_sign.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\rsa\rsa_x931.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha\sha1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha\sha256.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha\sha3.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sha\sha512.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sm3\sm3.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\sm4\sm4.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\stack\stack.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_asn1.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_conf.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_req_print.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_req_utils.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_rsp_print.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_rsp_sign.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_rsp_utils.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_rsp_verify.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ts\ts_verify_ctx.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\txt_db\txt_db.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ui\ui_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ui\ui_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ui\ui_null.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\by_dir.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\by_file.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\by_mem.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_addr.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_akey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_akeya.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_alt.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_asid.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_att.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_bcons.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_bitst.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_cmp.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_conf.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_constraints.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_cpols.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_crld.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_d2.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_def.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_err.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_ext.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_extku.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_genn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_ia5.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_info.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_int.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_issuer_cache.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_lib.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_lu.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_ncons.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_obj.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_ocsp.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_pcons.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_pku.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_pmaps.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_policy.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_prn.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_purp.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_r2x.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_req.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_set.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_siginfo.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_skey.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_trs.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_txt.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_utl.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_v3.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_verify.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_vfy.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509_vpm.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509cset.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509name.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509rset.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509spki.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x509type.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\x509\x_all.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\compat\crypto_lock_win.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\bio\b_win.c" />
+    <ClCompile Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\crypto\ui\ui_openssl_win.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\29478\source\repos\cpp\boost_test\third-party\libressl-4.0.0\build\ZERO_CHECK.vcxproj">
+      <Project>{C2144665-9388-36B0-AE24-06A8D64D8C1E}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>
