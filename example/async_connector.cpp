@@ -25,7 +25,7 @@ public:
 					_context.stop();
 				}
 			} catch (const std::exception &e) {
-				LOG_MSG(error) << "catch exception: " << e.what();
+				LOG_MSG(error) << fmt::format("catch exception: {}", e.what());
 			} catch (...) {
 				LOG_MSG(error) << "catch unknown exception";
 			}
@@ -55,7 +55,7 @@ private:
 				_sockets.push_back(std::move(socket));
 			}
 		} catch (const std::exception &e) {
-			LOG_MSG(error) << "catch exception: " << e.what();
+			LOG_MSG(error) << fmt::format("catch exception: {}", e.what());
 		} catch (...) {
 			LOG_MSG(error) << "catch unknown exception";
 		}
@@ -68,9 +68,9 @@ private:
 				return;
 			}
 			const auto now = std::chrono::system_clock::now();
-			LOG_MSG(info) << "connection takes: " << std::chrono::duration_cast<std::chrono::milliseconds>(now - conn_start_time);
+			LOG_MSG(info) << fmt::format("connection takes: {}", std::chrono::duration_cast<std::chrono::milliseconds>(now - conn_start_time).count());
 		} catch (const std::exception &e) {
-			LOG_MSG(error) << "catch exception: " << e.what();
+			LOG_MSG(error) << fmt::format("catch exception: {}", e.what());
 		} catch (...) {
 			LOG_MSG(error) << "catch unknown exception";
 		}

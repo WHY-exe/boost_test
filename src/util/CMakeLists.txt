@@ -31,6 +31,7 @@ target_link_libraries(${PROJECT_NAME}
     Boost::log_setup
     Boost::stacktrace
     ssl
+    fmt::fmt
 )
 
 target_precompile_headers(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/../boost_pch.hpp)

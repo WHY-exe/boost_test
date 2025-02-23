@@ -47,12 +47,12 @@ public:
 		return _slg;
 	};
 
-	static outcome::result<void> init_default(log_level svl, bool file_enabled, bool console_enabled) noexcept;
+	static outcome<void> init_default(log_level svl, bool file_enabled, bool console_enabled) noexcept;
 
-	static outcome::result<void> init_default_sink(log_level svl, const std::optional<fs::path> &log_path = std::nullopt,
+	static outcome<void> init_default_sink(log_level svl, const std::optional<fs::path> &log_path = std::nullopt,
 			bool isConsoleEnabled = false);
 
-	static outcome::result<void> add_file_sink(const std::string &file_path, log_level svl);
+	static outcome<void> add_file_sink(const std::string &file_path, log_level svl);
 
 	// Set attribute and return the new value
 	template <typename ValueType, class Logger>

@@ -10,7 +10,7 @@ file(GLOB_RECURSE files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
 )
 
 foreach(SRC_FILE ${files})
-    set(LINKED_LIBS util Boost::asio fmt::fmt)
+    set(LINKED_LIBS util Boost::asio fmt::fmt Boost::beast)
     string(REGEX  REPLACE ".cpp" "" BINARY_NAME ${SRC_FILE})
     add_executable(${BINARY_NAME} ${SRC_FILE})
     set_target_properties(${BINARY_NAME}

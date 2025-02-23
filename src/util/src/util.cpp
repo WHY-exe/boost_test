@@ -5,7 +5,7 @@
 #endif
 
 namespace util {
-outcome::result<fs::path> program_location() noexcept {
+outcome<fs::path> program_location() noexcept {
 	try {
 #if defined(WIN32)
 		TString ret;
@@ -29,10 +29,8 @@ outcome::result<fs::path> program_location() noexcept {
 #else
 		return make_error_code(Error::NO_IMPLEMENTED);
 #endif
-	} catch (const std::exception &e) {
-		return make_error_code(e);
 	} catch (...) {
-		return make_error_code(Error::UNKNOWN_EXCEPTION);
+		return std::current_exception();
 	}
 }
 

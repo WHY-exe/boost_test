@@ -22,7 +22,7 @@ Logger::Logger(const std::string &file_path) {
 	_slg.add_attribute("SinkName", log_attrs::constant<std::string>(file_path));
 }
 
-outcome::result<void> Logger::init_default(log_level svl, bool file_enabled, bool console_enabled) noexcept {
+outcome<void> Logger::init_default(log_level svl, bool file_enabled, bool console_enabled) noexcept {
 	try {
 		std::optional<fs::path> log_path = std::nullopt;
 		if (file_enabled) {
@@ -35,14 +35,11 @@ outcome::result<void> Logger::init_default(log_level svl, bool file_enabled, boo
 #endif
 		}
 		return init_default_sink(svl, log_path, console_enabled);
-	} catch (const std::exception &e) {
-		return make_error_code(e);
 	} catch (...) {
-		return make_error_code(Error::UNKNOWN_EXCEPTION);
+		return std::current_exception();
 	}
 }
-
-outcome::result<void> Logger::init_default_sink(log_level svl, const std::optional<fs::path> &log_path,
+outcome<void> Logger::init_default_sink(log_level svl, const std::optional<fs::path> &log_path,
 		bool isConsoleEnabled) {
 	try {
 		// New attributes that hold filename and line number for trvial logger.
@@ -58,7 +55,7 @@ outcome::result<void> Logger::init_default_sink(log_level svl, const std::option
 			std::string file_path = log_path.value().string() + "/log/default";
 			logging::trivial::logger::get().add_attribute("SinkName",
 					log_attrs::constant<std::string>(file_path));
-			outcome::result<void> res = add_file_sink(file_path, svl);
+			outcome<void> res = add_file_sink(file_path, svl);
 			if (!res) {
 				return res;
 			}
@@ -81,15 +78,13 @@ outcome::result<void> Logger::init_default_sink(log_level svl, const std::option
 		logging::add_common_attributes();
 		// set severity:
 		logging::core::get()->set_filter(logging::trivial::severity >= svl);
-	} catch (const std::exception &e) {
-		return make_error_code(e);
 	} catch (...) {
-		return make_error_code(Error::UNKNOWN_EXCEPTION);
+		return std::current_exception();
 	}
-	return outcome::success();
+	return boost::outcome_v2::success();
 }
 
-outcome::result<void> Logger::add_file_sink(const std::string &file_path, log_level svl) {
+outcome<void> Logger::add_file_sink(const std::string &file_path, log_level svl) {
 	try {
 		boost::shared_ptr<sinks::text_file_backend> backend =
 				boost::make_shared<sinks::text_file_backend>(
@@ -109,12 +104,10 @@ outcome::result<void> Logger::add_file_sink(const std::string &file_path, log_le
 							 << "[" << expr::attr<std::string>("Function") << "] " << expr::smessage);
 		sink_front->set_filter(expr::attr<std::string>("SinkName") == file_path && logging::trivial::severity >= svl);
 		logging::core::get()->add_sink(sink_front);
-	} catch (const std::exception &e) {
-		return make_error_code(e);
 	} catch (...) {
-		return make_error_code(Error::UNKNOWN_EXCEPTION);
+		return std::current_exception();
 	}
-	return outcome::success();
+	return boost::outcome_v2::success();
 }
 
 } // namespace util

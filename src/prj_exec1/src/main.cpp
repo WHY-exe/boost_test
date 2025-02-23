@@ -7,6 +7,7 @@
 #include "util/dump_helper.h"
 #include "util/exception.hpp"
 #include "util/log.hpp"
+#include "util/error.hpp"
 #include "util/stacktrace_dumper.h"
 
 #include <openssl/ssl.h>
@@ -44,7 +45,7 @@ int main() {
 	const auto log_ini_stat =
 			util::Logger::init_default(util::log_level::trace, true, true);
 	if (!log_ini_stat) {
-		std::cout << "fail to ini default log sink" << '\n';
+		std::cout << "fail to ini default log sink: " << log_ini_stat;
 	}
 #ifdef unix
 	signal(SIGPIPE, SIG_IGN);

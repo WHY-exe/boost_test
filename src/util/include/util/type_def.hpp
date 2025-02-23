@@ -15,7 +15,12 @@
 
 namespace util {
 namespace fs	  = std::filesystem;
-namespace outcome = boost::outcome_v2;
+
+template <typename T>
+using outcome = boost::outcome_v2::outcome<T>;
+
+template <typename T>
+using result = boost::outcome_v2::result<T>;
 
 using TString = std::basic_string<TCHAR>;
 } //namespace util
