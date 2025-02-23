@@ -9,7 +9,11 @@
       "binaryDir": "${sourceDir}/out/build/${presetName}",
       "installDir": "${sourceDir}/out/install/${presetName}",
       "cacheVariables": {
-        "CMAKE_EXPORT_COMPILE_COMMANDS": true
+        "CMAKE_EXPORT_COMPILE_COMMANDS": true,
+        "BUILD_BOOST_FROM_SRC": true,
+        "BOOST_SRC_PATH": "/home/boost-1.87.0",
+        "LIBRESSL_APPS": false,
+        "LIBRESSL_TESTS": false
       },
       "condition": {
         "type": "equals",
