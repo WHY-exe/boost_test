@@ -12,6 +12,10 @@ option(BUILD_EXAMPLE OFF)
 option(BUILD_TEST "Whether compile unit test" false)
 # needs to specify BOOST_SRC_PATH
 option(BUILD_BOOST_FROM_SRC "Building boost libs from src" true)
+if(WIN32)    
+    option(BUILD_FOR_WIN7 false)
+    option(BUILD_FOR_XP false)
+endif(WIN32)
 
 if (NOT BUILD_BOOST_FROM_SRC)
     find_package(Boost 1.87 REQUIRED)
@@ -61,14 +65,18 @@ if(CMAKE_SYSTEM_NAME MATCHES "Windows")
             set(${version} "0x${ver}")
         endif()
     endmacro()
-
+    # define win32 macro
     if(NOT DEFINED _WIN32_WINNT)
-        get_win32_winnt(ver)
-        set(_WIN32_WINNT ${ver})
+        if(BUILD_FOR_WIN7)
+            set(_WIN32_WINNT 0x601)
+        elseif(BUILD_FOR_XP)
+            set(_WIN32_WINNT 0x502)
+        else()
+            get_win32_winnt(ver)
+            set(_WIN32_WINNT ${ver})
+        endif(BUILD_FOR_WIN7)
     endif()
-
     message(STATUS "Set _WIN32_WINNET=${_WIN32_WINNT}")
-
     add_compile_definitions(_WIN32_WINNT=${_WIN32_WINNT} WIN32_LEAN_AND_MEAN)
 endif()
 # public include dir
@@ -91,7 +99,6 @@ if(BUILD_TEST)
     message(STATUS "${PROJECT_NAME}: building unitest for the project")
     enable_testing()
     add_subdirectory(test)
-    add_test(NAME unit_test COMMAND unit_test)
 endif()
 
 # copy compile_commands.json to SOURCE_DIR to enable clangd magic

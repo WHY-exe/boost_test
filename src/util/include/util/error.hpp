@@ -35,7 +35,7 @@ std::string retrive_error_msg(const outcome<T> &outcome) {
 			boost::rethrow_exception(outcome.exception());
 		}
 	} catch (const std::exception &e) {
-		return fmt::format("catch std exception: {}", e.what());
+		return fmt::format("{}", e.what());
 	} catch (...) {
 		return "unknown exception";
 	}
