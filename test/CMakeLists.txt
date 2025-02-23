@@ -11,6 +11,7 @@ file(GLOB_RECURSE files RELATIVE ${CMAKE_CURRENT_SOURCE_DIR}
 foreach(SRC_FILE ${files})
     set(LINKED_LIBS  
             Boost::unit_test_framework
+            util
     )
     string(REGEX REPLACE ".cpp" "" BINARY_NAME ${SRC_FILE})
     add_executable(${BINARY_NAME} ${SRC_FILE})
@@ -21,5 +22,9 @@ foreach(SRC_FILE ${files})
             RUNTIME_OUTPUT_DIRECTORY "${TEST_BIN_DIR}/"
     )
     target_link_libraries(${BINARY_NAME} PRIVATE ${LINKED_LIBS})
+    add_test(
+        NAME ${BINARY_NAME}\_test
+        COMMAND $<TARGET_FILE:${BINARY_NAME}>
+	)
     add_dependencies(${BINARY_NAME} ${LINKED_LIBS})
 endforeach()

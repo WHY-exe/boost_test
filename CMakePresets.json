@@ -74,6 +74,7 @@
         "LIBRESSL_APPS": false,
         "LIBRESSL_TESTS": false,
         "CMAKE_EXPORT_COMPILE_COMMANDS": true,
+        "BUILD_TEST": true,
         "BUILD_BOOST_FROM_SRC": true,
         "BOOST_SRC_PATH": "C:\\SDKLib\\boost-1.87.0"
       },
