@@ -1,6 +1,6 @@
 #pragma once
 #include <system_error> // bring in std::error_code et al
-#include <fmt/format.h>
+#include <spdlog/fmt/fmt.h>
 #include "type_def.hpp"
 namespace util {
 enum class Error {

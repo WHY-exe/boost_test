@@ -1,10 +1,14 @@
+#include <spdlog/spdlog.h>
 #include <boost/asio.hpp>
 #include <boost/asio/co_spawn.hpp>
 #include <boost/asio/detached.hpp>
+#include <boost/stacktrace.hpp>
+
 
 #include "util/asio_as_result.hpp"
-#include "util/error.hpp"
-#include "util/log.hpp"
+#include "util/exception.hpp"
+#include "util/util.hpp"
+
 
 using tcp = boost::asio::ip::tcp;
 
@@ -16,26 +20,25 @@ boost::asio::awaitable<void> echo(tcp::socket socket, tcp::endpoint peer_ep) {
 					boost::asio::buffer(buffer), CO_RESULT_TOKEN);
 			if (!read_size) {
 				if (read_size.error() == boost::asio::error::eof) {
-					LOG_MSG(info) << "connection close for client" << peer_ep.address().to_string() << ":"
-								  << peer_ep.port();
+					SPDLOG_INFO("connection close for client {}: {}", peer_ep.address().to_string(), peer_ep.port());
 					break;
 				}
-				LOG_MSG(error) << "read error: " << read_size.error().message();
+				SPDLOG_ERROR("read error: {}", read_size.error().message());
 				break;
 			}
 			std::string_view sv_buffer(&buffer[0], read_size.value());
-			LOG_MSG(info) << "recieve " << sv_buffer << " from endpoint: " << peer_ep.address().to_string() << ":" << peer_ep.port();
+			SPDLOG_INFO("recieve {} from endpoint: {}:{}", sv_buffer, peer_ep.address().to_string(), peer_ep.port());
 			util::result<size_t> write_res = co_await socket.async_write_some(
 					boost::asio::buffer(sv_buffer), CO_RESULT_TOKEN);
 			if (!write_res) {
-				LOG_MSG(error) << "write error: " << write_res.error().message();
+				SPDLOG_ERROR("write error: {}", write_res.error().message());
 				break;
 			}
 		}
 	} catch (const std::exception &e) {
-		LOG_MSG(error) << "catch exception: " << e.what();
+		SPDLOG_ERROR("catch exception: {}", e.what());
 	} catch (...) {
-		LOG_MSG(error) << "catch unknown exception";
+		SPDLOG_ERROR("catch unknown exception");
 	}
 }
 
@@ -45,32 +48,28 @@ boost::asio::awaitable<void> listen() {
 	try {
 		auto executor = co_await boost::asio::this_coro::executor;
 		tcp::acceptor			 acceptor(executor, { tcp::v4(), 7800 });
-		LOG_MSG(info) << "listening on port 7800";
+		SPDLOG_INFO("listening on port 7800");
 		while (true) {
 			tcp::endpoint			  peer_ep;
 			util::result<tcp::socket> socket = co_await acceptor.async_accept(peer_ep, CO_RESULT_TOKEN);
 			if (!socket) {
-				LOG_MSG(error) << "accept error: " << socket.error().message();
+				SPDLOG_INFO("accept error: {}", socket.error().message());
 				continue;
 			}
-			LOG_MSG(info) << "accept connection from: " << peer_ep.address().to_string() << ":" << peer_ep.port();
+			SPDLOG_INFO("accept connection from: {}: {}", peer_ep.address().to_string(), peer_ep.port());
 			boost::asio::co_spawn(executor, echo(std::move(socket.value()), std::move(peer_ep)),
 					boost::asio::detached);
 		}
 	} catch (const std::exception &e) {
-		LOG_MSG(error) << "catch exception: " << e.what();
+		SPDLOG_ERROR("catch exception: {}", e.what());
 	} catch (...) {
-		LOG_MSG(error) << "catch unknown exception";
+		SPDLOG_ERROR("catch unknown exception");
 	}
 }
 
 int main() {
 	try {
-		const auto log_ini_stat =
-				util::Logger::init_default(util::log_level::trace, false, true);
-		if (!log_ini_stat) {
-			std::cout << "fail to ini default log sink\n";
-		}
+		util::init_log(spdlog::level::trace);
 		boost::asio::io_context io_ctx;
 		boost::asio::signal_set signals(io_ctx, SIGINT, SIGTERM);
 		signals.async_wait([&](const boost::system::error_code &, int) { io_ctx.stop(); });
@@ -78,9 +77,14 @@ int main() {
 		io_ctx.run();
 		return EXIT_SUCCESS;
 	} catch (const std::exception &e) {
-		LOG_MSG(error) << "catch exception: " << e.what();
+		const boost::stacktrace::stacktrace *st = boost::get_error_info<util::exception::traced>(e);
+		std::stringstream					 ss;
+		ss << (st ? *st : boost::stacktrace::stacktrace::from_current_exception());
+		SPDLOG_ERROR("Catch exception: {}, trace: \n {}", e.what(), ss.str());
 	} catch (...) {
-		LOG_MSG(error) << "catch unknown exception";
+		std::stringstream ss;
+		ss << boost::stacktrace::stacktrace::from_current_exception();
+		SPDLOG_ERROR("Catch unknown exception ... trace: {}", ss.str());
 	}
 	return EXIT_FAILURE;
 }

@@ -1,11 +1,11 @@
-﻿#include <fmt/format.h>
-#include <boost/asio.hpp>
+﻿#include <boost/asio.hpp>
 #include <boost/stacktrace.hpp>
 
 #include "util/asio_as_result.hpp"
 #include "util/asio_timeout.hpp"
 #include "util/exception.hpp"
-#include "util/log.hpp"
+#include "spdlog/spdlog.h"
+#include "util/util.hpp"
 
 using tcp = boost::asio::ip::tcp;
 
@@ -21,29 +21,23 @@ boost::asio::awaitable<void> async_connect(tcp::endpoint ep) {
 
 		const auto now = std::chrono::system_clock::now();
 		if (conn_res) {
-			LOG_MSG(info) << fmt::format("connection to {}:{} takes {}ms", ep.address().to_string(), ep.port(),
+			SPDLOG_INFO("connection to {}:{} takes {}ms", ep.address().to_string(), ep.port(),
 					std::chrono::duration_cast<std::chrono::milliseconds>(now - conn_time).count());
 			co_return;
 		}
 
-		LOG_MSG(error) << fmt::format("error connected to {}:{}: {}", ep.address().to_string(), ep.port(),
+		SPDLOG_ERROR("error connected to {}:{}: {}", ep.address().to_string(), ep.port(),
 				conn_res.error().message());
 	} catch (const std::exception &e) {
-		LOG_MSG(error) << fmt::format("catch exception: {}", e.what());
+		SPDLOG_INFO("catch exception: {}", e.what());
 	} catch (...) {
-		LOG_MSG(error) << "Catch unknown exception ...";
-		LOG_MSG(error) << "stacktrace:\n"
-					   << boost::stacktrace::stacktrace::from_current_exception();
+		SPDLOG_INFO("Catch unknown exception ...");
 	}
 }
 
 int main() {
 	try {
-		const auto ini_stat = util::Logger::init_default(util::log_level::trace, false, true);
-		if (!ini_stat) {
-			std::cout << "fail to init default logger" << ini_stat.error().message();
-			return EXIT_FAILURE;
-		}
+		util::init_log(spdlog::level::trace);
 		boost::asio::io_context		   io_ctx;
 		boost::asio::ip::tcp::resolver resolver(io_ctx);
 		const std::string_view		   sv[] = {
@@ -65,19 +59,14 @@ int main() {
 		}
 		io_ctx.run();
 	} catch (const std::exception &e) {
-		LOG_MSG(error) << fmt::format("catch exception: {}", e.what());
 		const boost::stacktrace::stacktrace *st = boost::get_error_info<util::exception::traced>(e);
-		if (st) {
-			LOG_MSG(error) << "trace: \n"
-						   << *st;
-		} else {
-			LOG_MSG(error) << "stacktrace:\n"
-						   << boost::stacktrace::stacktrace::from_current_exception();
-		}
+		std::stringstream ss;
+		ss << (st ? *st : boost::stacktrace::stacktrace::from_current_exception());
+		SPDLOG_ERROR("Catch exception: {}, trace: \n {}", e.what(), ss.str());
 	} catch (...) {
-		LOG_MSG(error) << "Catch unknown exception ...";
-		LOG_MSG(error) << "stacktrace:\n"
-					   << boost::stacktrace::stacktrace::from_current_exception();
+		std::stringstream ss;
+		ss << boost::stacktrace::stacktrace::from_current_exception();
+		SPDLOG_ERROR("Catch unknown exception ... trace: {}", ss.str());
 	}
 	return 0;
 }

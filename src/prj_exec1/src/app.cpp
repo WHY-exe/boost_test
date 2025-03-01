@@ -1,11 +1,10 @@
 #include "app.h"
-
-#include "util/log.hpp"
+#include <spdlog/spdlog.h>
 
 namespace prj_exec1 {
 
 void App::run() {
-	LOG_MSG(info) << "Hello, Boost.log INFO";
+	SPDLOG_INFO("Hello, sdplog.INFO");
 	// throw std::logic_error("test exception");
 	// abort();
 }

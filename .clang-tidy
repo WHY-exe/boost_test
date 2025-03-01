@@ -48,8 +48,8 @@ CheckOptions:
   # 可读性（Readability）
   - key:             readability-braces-around-statements
     value:           'true'  # 建议在单行语句周围添加大括号，以提高代码的可读性和一致性。
-  - key:             readability-identifier-naming.ClassCase
-    value:           'CamelCase'  # 类名应使用 CamelCase 风格，例如 MyClassName。
+  ; - key:             readability-identifier-naming.ClassCase
+  ;   value:           'CamelCase'  # 类名应使用 CamelCase 风格，例如 MyClassName。
   - key:             readability-identifier-naming.StructCase
     value:           'CamelCase'  # 结构体名应使用 CamelCase 风格，例如 MyStructName。
   - key:             readability-identifier-naming.TypedefCase

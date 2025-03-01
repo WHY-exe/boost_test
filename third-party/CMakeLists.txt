@@ -1,11 +1,10 @@
 cmake_minimum_required(VERSION 3.11...3.20)
 add_subdirectory(libressl-4.0.0)
-add_subdirectory(fmt)
+add_subdirectory(spdlog-1.15.0)
 if(BUILD_BOOST_FROM_SRC)
     set(BOOST_INCLUDE_LIBRARIES
         asio
-        beast
-        log 
+        beast 
         outcome
         stacktrace 
     )

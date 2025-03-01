@@ -1,9 +1,8 @@
 #include "util/exception.hpp"
-#include "util/log.hpp"
-
-#include <fmt/format.h>
 #include <boost/asio.hpp>
 #include <boost/stacktrace.hpp>
+#include <spdlog/spdlog.h>
+#include "util/util.hpp"
 
 class AysncConnector {
 	using tcp									   = boost::asio::ip::tcp;
@@ -25,9 +24,9 @@ public:
 					_context.stop();
 				}
 			} catch (const std::exception &e) {
-				LOG_MSG(error) << fmt::format("catch exception: {}", e.what());
+				SPDLOG_ERROR("catch exception: {}", e.what());
 			} catch (...) {
-				LOG_MSG(error) << "catch unknown exception";
+				SPDLOG_ERROR("catch unknown exception");
 			}
 		});
 		for (const auto &i : eps) {
@@ -45,7 +44,7 @@ private:
 	void _handle_resolve(boost::system::error_code ec, const tcp::resolver::results_type &results, std::string hostname) {
 		try {
 			if (ec) {
-				LOG_MSG(error) << fmt::format("resolve host {} failed: {}", hostname, ec.message());
+				SPDLOG_ERROR("resolve host {} failed: {}", hostname, ec.message());
 				return;
 			}
 			for (const auto &i : results) {
@@ -55,24 +54,24 @@ private:
 				_sockets.push_back(std::move(socket));
 			}
 		} catch (const std::exception &e) {
-			LOG_MSG(error) << fmt::format("catch exception: {}", e.what());
+			SPDLOG_ERROR("catch exception: {}", e.what());
 		} catch (...) {
-			LOG_MSG(error) << "catch unknown exception";
+			SPDLOG_ERROR("catch unknown exception");
 		}
 	}
 
 	void _handle_connect(boost::system::error_code ec, std::chrono::time_point<std::chrono::system_clock> conn_start_time, const tcp::endpoint &ep) {
 		try {
 			if (ec) {
-				LOG_MSG(error) << fmt::format("connection to {} failed: {}", ep.address().to_string(), ec.message());
+				SPDLOG_ERROR("connection to {} failed: {}", ep.address().to_string(), ec.message());
 				return;
 			}
 			const auto now = std::chrono::system_clock::now();
-			LOG_MSG(info) << fmt::format("connection takes: {}", std::chrono::duration_cast<std::chrono::milliseconds>(now - conn_start_time).count());
+			SPDLOG_ERROR("connection takes: {}", std::chrono::duration_cast<std::chrono::milliseconds>(now - conn_start_time).count());
 		} catch (const std::exception &e) {
-			LOG_MSG(error) << fmt::format("catch exception: {}", e.what());
+			SPDLOG_ERROR("catch exception: {}", e.what());
 		} catch (...) {
-			LOG_MSG(error) << "catch unknown exception";
+			SPDLOG_ERROR("catch unknown exception");
 		}
 	}
 
@@ -84,12 +83,8 @@ private:
 };
 
 int main() {
-	const auto ini_stat = util::Logger::init_default(util::log_level::trace, false, true);
-	if (!ini_stat) {
-		std::cout << "fail to init default logger" << ini_stat.error().message();
-		return EXIT_FAILURE;
-	}
 	try {
+		util::init_log(spdlog::level::trace);
 		std::vector<std::string> ip_list = {
 			// "www.google.com",
 			"www.baidu.com",
@@ -101,18 +96,13 @@ int main() {
 		connector.async_connect(ip_list);
 		connector.run_context();
 	} catch (const std::exception &e) {
-		LOG_MSG(error) << "Catch exception: " << e.what();
 		const boost::stacktrace::stacktrace *st = boost::get_error_info<util::exception::traced>(e);
-		if (st) {
-			LOG_MSG(error) << "trace: \n"
-						   << *st;
-		} else {
-			LOG_MSG(error) << "stacktrace:\n"
-						   << boost::stacktrace::stacktrace::from_current_exception();
-		}
+		std::stringstream ss;
+		ss << (st ? *st : boost::stacktrace::stacktrace::from_current_exception());
+		SPDLOG_ERROR("Catch exception: {}, trace: \n {}", e.what(), ss.str());
 	} catch (...) {
-		LOG_MSG(error) << "Catch unknown exception ...";
-		LOG_MSG(error) << "stacktrace:\n"
-					   << boost::stacktrace::stacktrace::from_current_exception();
+		std::stringstream ss;
+		ss << boost::stacktrace::stacktrace::from_current_exception();
+		SPDLOG_ERROR("Catch unknown exception ... trace: {}", ss.str());
 	}
 }

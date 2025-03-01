@@ -1,7 +1,7 @@
 #include "stacktrace_dumper.h"
 
 #include "dump_helper.h"
-#include "log.hpp"
+#include <spdlog/spdlog.h>
 #include "util.hpp"
 #include <boost/stacktrace.hpp>
 #include <csignal>
@@ -44,8 +44,9 @@ void StacktraceDumper::show_last_dump() {
 	const std::string filename = StacktraceDumper::_get_dump_path().string();
 	if (std::filesystem::exists(filename)) {
 		std::ifstream ifs(filename);
-		LOG_MSG(error) << "last dump detect:\n"
-					   << boost::stacktrace::stacktrace::from_dump(ifs);
+		std::stringstream ss;
+		ss << "last dump detect:\n" << boost::stacktrace::stacktrace::from_dump(ifs);
+		SPDLOG_ERROR(ss.str());
 		ifs.close();
 		std::filesystem::remove(filename);
 	}

@@ -11,7 +11,7 @@ struct with_timeout {
 
 // this is the timeout source
 struct timeout_provider {
-	timeout_provider(boost::asio::any_io_executor exec,
+	timeout_provider(const boost::asio::any_io_executor& exec,
 			std::chrono::milliseconds			  tt_total,
 			std::chrono::milliseconds			  tt_partial,
 			std::chrono::milliseconds			  tt_terminal) :
@@ -21,10 +21,12 @@ struct timeout_provider {
 			_tt_terminal(tt_terminal),
 			emit_all(false) {}
 
-	timeout_provider(boost::asio::any_io_executor exec,
+	timeout_provider(const boost::asio::any_io_executor& exec,
 			std::chrono::milliseconds			  tt_total) :
 			tim{ exec, std::chrono::steady_clock::time_point::max() },
 			_tt_total(tt_total),
+			_tt_partial(std::chrono::milliseconds(0)),
+			_tt_terminal(std::chrono::milliseconds(0)),
 			emit_all(true) {}
 
 	boost::asio::steady_timer tim;
@@ -64,7 +66,7 @@ struct timeout_provider {
 		tim.async_wait(
 				[this](boost::system::error_code ec) {
 					if (!ec) {
-						emit_all ? fire_total() : fire_all();
+						emit_all ? fire_all() : fire_total();
 					}
 				});
 	}

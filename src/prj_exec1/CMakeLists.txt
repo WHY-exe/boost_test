@@ -25,6 +25,7 @@ target_link_libraries(${PROJECT_NAME}
     PRIVATE
     util
     Boost::stacktrace
+    spdlog::spdlog
 )
 target_precompile_headers(${PROJECT_NAME} REUSE_FROM util)
 
@@ -36,6 +37,7 @@ set_property(TARGET ${PROJECT_NAME} APPEND_STRING
 add_dependencies(${PROJECT_NAME}
     util
     Boost::stacktrace
+    spdlog::spdlog
 )
 
 set_target_properties(${PROJECT_NAME} PROPERTIES

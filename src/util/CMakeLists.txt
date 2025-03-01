@@ -26,15 +26,13 @@ target_include_directories(${PROJECT_NAME}
 target_link_libraries(${PROJECT_NAME} 
     PUBLIC
     Boost::asio
-    Boost::log
     Boost::outcome
-    Boost::log_setup
     Boost::stacktrace
+    spdlog::spdlog
     ssl
-    fmt::fmt
 )
 
-target_precompile_headers(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/../boost_pch.hpp)
+target_precompile_headers(${PROJECT_NAME} PRIVATE ${PROJECT_SOURCE_DIR}/../pch.hpp)
 
 # setting up compile flags
 set_property(TARGET ${PROJECT_NAME} APPEND_STRING
@@ -43,10 +41,9 @@ set_property(TARGET ${PROJECT_NAME} APPEND_STRING
 
 add_dependencies(${PROJECT_NAME}
     Boost::asio
-    Boost::log
-    Boost::log_setup
     Boost::stacktrace
     Boost::outcome
+    spdlog::spdlog
     ssl
 )
 
